@@ -1,0 +1,169 @@
+{
+ "_theme": "morning",
+ "en": {
+  "sight": [
+   "slate-blue sky",
+   "first bus",
+   "light under the door",
+   "puddle steam",
+   "unmade bed",
+   "schoolbag on the stairs"
+  ],
+  "sound": [
+   "alarm about to buzz",
+   "dish-rack tinkle",
+   "kettle click",
+   "keys in the lock",
+   "footsteps overhead",
+   "shutters rising"
+  ],
+  "touch": [
+   "cold tile",
+   "hem of the robe",
+   "sunbeam on the calf",
+   "sticky eyelid",
+   "shoe on cold stone",
+   "weight of the tray"
+  ],
+  "smell": [
+   "warm bread",
+   "first coffee",
+   "cold dish soap",
+   "frost on the leaves",
+   "dewy linen",
+   "burnt toast edge"
+  ],
+  "taste": [
+   "first bitter sip",
+   "glass of water",
+   "orange wedge",
+   "butter on toast",
+   "milk film",
+   "cooked batter"
+  ],
+  "objects": [
+   "alarm clock",
+   "dish rack",
+   "hot-water bottle",
+   "birds nest",
+   "sweeper truck",
+   "paper bag"
+  ],
+  "verbs": [
+   "brew",
+   "yawn",
+   "cough",
+   "slip into shoes"
+  ]
+ },
+ "zh": {
+  "sight": [
+   "鱼肚白的天",
+   "头班车",
+   "门缝里的光",
+   "水洼冒白汽",
+   "没叠的被子",
+   "楼道里的书包"
+  ],
+  "sound": [
+   "闹钟响铃前",
+   "碗架叮当",
+   "水壶咔哒",
+   "钥匙在锁里转",
+   "楼上的脚步",
+   "卷闸门拉开"
+  ],
+  "touch": [
+   "凉地砖",
+   "睡袍的下摆",
+   "小腿上的日光",
+   "粘住的眼皮",
+   "冷石头上的鞋",
+   "盘子的分量"
+  ],
+  "smell": [
+   "刚出炉的馒头",
+   "第一杯咖啡",
+   "凉了的洗洁精味",
+   "叶子上的霜",
+   "晨露的床单",
+   "烤糊的边"
+  ],
+  "taste": [
+   "第一口苦咖啡",
+   "一杯清水",
+   "橘子瓣",
+   "吐司上的黄油",
+   "牛奶的奶皮",
+   "面糊味"
+  ],
+  "objects": [
+   "闹钟",
+   "碗架",
+   "暖水瓶",
+   "鸟窝",
+   "洒水车",
+   "纸袋子"
+  ],
+  "verbs": [
+   "泡",
+   "打哈欠",
+   "咳两声",
+   "趿鞋"
+  ]
+ },
+ "ms": {
+  "sight": [
+   "langit kelabu",
+   "bas pertama",
+   "cahaya di bawah pintu",
+   "wap di genangan",
+   "katil tidak disusun",
+   "beg di tangga"
+  ],
+  "sound": [
+   "azan jauh",
+   "ayam berkokok",
+   "pintu berderit",
+   "cerek mengeletak",
+   "langkah di lantai atas",
+   "pintu besi naik"
+  ],
+  "touch": [
+   "simen dingin",
+   "hujung kain",
+   "cahaya matahari di kaki",
+   "kelopak lekit",
+   "kasut di batu dingin",
+   "berat dulang"
+  ],
+  "smell": [
+   "roti hangat",
+   "kopi pertama",
+   "embun di daun",
+   "linen lembap",
+   "roti hangus"
+  ],
+  "taste": [
+   "kopi pertama",
+   "segelas air",
+   "hiris limau",
+   "mentega di roti",
+   "lemak susu",
+   "adun hangat"
+  ],
+  "objects": [
+   "jam loceng",
+   "rak pinggan",
+   "termos",
+   "sarang burung",
+   "beg kertas"
+  ],
+  "verbs": [
+   "menyeduh",
+   "menguap",
+   "tersilap kasut",
+   "mekar"
+  ]
+ }
+}

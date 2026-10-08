@@ -1,0 +1,177 @@
+{
+ "_theme": "night",
+ "en": {
+  "sight": [
+   "streetlamp",
+   "neon sign",
+   "pale moon",
+   "curtain gap",
+   "passing headlights",
+   "empty bus stop"
+  ],
+  "sound": [
+   "distant siren",
+   "cricket chirp",
+   "fridge hum",
+   "creaking floorboard",
+   "last train",
+   "wind at the shutter"
+  ],
+  "touch": [
+   "cold pillow",
+   "bare feet on tiles",
+   "cool sheet",
+   "night air on skin",
+   "damp dark",
+   "warm key fob"
+  ],
+  "smell": [
+   "cold ash",
+   "night jasmine",
+   "sour dish cloth",
+   "asphalt cooling",
+   "stale beer",
+   "mothballs"
+  ],
+  "taste": [
+   "flat water",
+   "toothpaste",
+   "late whiskey",
+   "cold tea",
+   "dry mouth",
+   "midnight snack grease"
+  ],
+  "objects": [
+   "alarm clock",
+   "cigarette butt",
+   "lamp post",
+   "keyhole",
+   "porch light",
+   "mattress"
+  ],
+  "verbs": [
+   "flicker",
+   "doze",
+   "wake",
+   "glimmer",
+   "hush",
+   "stumble"
+  ]
+ },
+ "zh": {
+  "sight": [
+   "路灯",
+   "红绿灯",
+   "窗帘缝",
+   "月亮",
+   "加班的灯火",
+   "空站台"
+  ],
+  "sound": [
+   "蝉鸣",
+   "远处的狗叫",
+   "冰箱嗡嗡",
+   "楼板吱呀",
+   "末班车",
+   "风刮窗框"
+  ],
+  "touch": [
+   "凉枕头",
+   "光脚踩地砖",
+   "薄被",
+   "夜风",
+   "黑里摸索",
+   "手心的钥匙"
+  ],
+  "smell": [
+   "烟头",
+   "夜来香",
+   "洗碗布味",
+   "晚风凉气",
+   "隔夜啤酒",
+   "樟脑丸"
+  ],
+  "taste": [
+   "白开水",
+   "牙膏味",
+   "凉茶",
+   "口干",
+   "夜里的油烟味",
+   "冷掉的菜"
+  ],
+  "objects": [
+   "闹钟",
+   "床板",
+   "台灯",
+   "钥匙孔",
+   "楼道灯",
+   "窗帘"
+  ],
+  "verbs": [
+   "闪",
+   "打盹",
+   "醒",
+   "晃",
+   "静",
+   "摸"
+  ]
+ },
+ "ms": {
+  "sight": [
+   "lampu jalan",
+   "bulan",
+   "bintang",
+   "gelap pekat",
+   "tirai terseliak",
+   "perhentian bas kosong"
+  ],
+  "sound": [
+   "jangkrik",
+   "siren jauh",
+   "petisej berdengung",
+   "pintu berderit",
+   "kereta jauh",
+   "bunyi angin"
+  ],
+  "touch": [
+   "bantal dingin",
+   "kaki di simen",
+   "cadar sejuk",
+   "hawa malam",
+   "gelap kamar",
+   "kunci di tangan"
+  ],
+  "smell": [
+   "kapur barus",
+   "asap puntas",
+   "kain cuci masam",
+   "aspal mendingin",
+   "bir basi",
+   "melati malam"
+  ],
+  "taste": [
+   "air kosong",
+   "ubat gigi",
+   "kopi pekat",
+   "mulut kering",
+   "mi sejuk",
+   "minyak goreng"
+  ],
+  "objects": [
+   "jam loceng",
+   "lampu tidur",
+   "lubang kunci",
+   "lampu beranda",
+   "tilam",
+   "butir rokok"
+  ],
+  "verbs": [
+   "berkelip",
+   "mengantuk",
+   "terjaga",
+   "berdenyut",
+   "senyap",
+   "menutup mata"
+  ]
+ }
+}

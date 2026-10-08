@@ -1,0 +1,250 @@
+{
+  "schema": 1,
+  "updated": "2026-10-07",
+  "tiers": {
+    "high": {
+      "warn_days": 30,
+      "stale_days": 60
+    },
+    "medium": {
+      "warn_days": 90,
+      "stale_days": 180
+    },
+    "low": {
+      "warn_days": 365,
+      "stale_days": 730
+    }
+  },
+  "entries": {
+    "SKILL.md": {
+      "volatility": "medium",
+      "last_verified": "2026-10-07",
+      "sources": [],
+      "notes": "Core skill: modes, workflow, routing, quick rules"
+    },
+    "references/00-index.md": {
+      "volatility": "medium",
+      "last_verified": "2026-10-07",
+      "sources": [],
+      "notes": "Annotated index of the whole bundle"
+    },
+    "references/01-song-structure.md": {
+      "volatility": "low",
+      "last_verified": "2026-10-07",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Song_structure",
+        "https://en.wikipedia.org/wiki/Thirty-two_bar_form",
+        "https://en.wikipedia.org/wiki/Strophic_form",
+        "https://en.wikipedia.org/wiki/Through-composed_music",
+        "https://en.wikipedia.org/wiki/List_of_Song_Exploder_episodes",
+        "https://www.ethanhein.com/wp/2024/the-32-bar-aaba-song-form/"
+      ],
+      "notes": "Song form, sections, energy curve"
+    },
+    "references/02-rhythm-groove.md": {
+      "volatility": "low",
+      "last_verified": "2026-10-07",
+      "sources": [
+        "https://learningmusic.ableton.com/make-beats/tempo-and-genre.html",
+        "https://www.izotope.com/community/blog/using-different-tempos-to-make-beats-for-different-genres",
+        "https://www.ethanhein.com/wp/2021/swing-primer/",
+        "https://www.ethanhein.com/wp/2024/what-is-syncopation/",
+        "https://www.ethanhein.com/wp/2022/dilla-time/",
+        "https://melodiefabriek.com/sound-tech/mpc-swing-reason/"
+      ],
+      "notes": "Tempo, meter, groove, swing"
+    },
+    "references/03-melody-harmony.md": {
+      "volatility": "low",
+      "last_verified": "2026-10-07",
+      "sources": [
+        "https://musictheory.pugetsound.edu/mt21c/RulesOfMelody.html",
+        "https://musictheory.pugetsound.edu/mt21c/MelodicAlteration.html",
+        "https://musictheory.pugetsound.edu/mt21c/HarmonicFunction.html",
+        "https://musictheory.pugetsound.edu/mt21c/StandardChordProgressions.html",
+        "https://musictheory.pugetsound.edu/mt21c/Suspension.html",
+        "https://musictheory.pugetsound.edu/mt21c/cadences.html"
+      ],
+      "notes": "Melody, hooks, chord progressions"
+    },
+    "references/04-lyric-craft.md": {
+      "volatility": "low",
+      "last_verified": "2026-10-07",
+      "sources": [
+        "https://www.musesmuse.com/patart2.html",
+        "https://www.writersdigest.com/wd-books/writing-better-lyrics-interview",
+        "https://en.wikipedia.org/wiki/Lyric_setting",
+        "https://en.wikipedia.org/wiki/Prosody_(music",
+        "https://en.wikipedia.org/wiki/Rhyme_scheme",
+        "https://en.wikipedia.org/wiki/Perfect_and_imperfect_rhymes"
+      ],
+      "notes": "Lyrics, prosody, rhyme, imagery"
+    },
+    "references/05-mood-production.md": {
+      "volatility": "low",
+      "last_verified": "2026-10-07",
+      "sources": [
+        "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2013.00487/full",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9803112/",
+        "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2013.00464/full",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5296353/",
+        "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2017.01402/full",
+        "https://continuum-hypothesis.com/music/FULLTEXT01.pdf"
+      ],
+      "notes": "Mood, timbre, arrangement, production"
+    },
+    "references/06-meaning-subtext.md": {
+      "volatility": "low",
+      "last_verified": "2026-10-07",
+      "sources": [
+        "https://www.soundonsound.com/techniques/pat-pattison-writing-better-lyrics",
+        "https://www.patpattison.com/developing-verse-ideas",
+        "https://www.patpattison.com/pat-s-lyric-tips",
+        "https://www.writersdigest.com/wd-books/writing-better-lyrics-excerpt",
+        "https://flypaper.soundfly.com/write/lyrical-themes-many-ways-to-develop-them/",
+        "https://janefriedman.com/the-art-and-purpose-of-subtext/"
+      ],
+      "notes": "Meaning, subtext, symbolism"
+    },
+    "references/07-worked-examples.md": {
+      "volatility": "low",
+      "last_verified": "2026-10-07",
+      "sources": [],
+      "notes": "Two worked BUILD-mode examples (original, no external sources)"
+    },
+    "references/10-suno-mechanics.md": {
+      "volatility": "high",
+      "last_verified": "2026-10-07",
+      "sources": [
+        "https://help.suno.com/en/articles/13924481",
+        "https://help.suno.com/en/articles/3161921",
+        "https://help.suno.com/en/articles/3484161",
+        "https://help.suno.com/en/articles/3726721",
+        "https://help.suno.com/en/articles/3197377",
+        "https://help.suno.com/en/articles/3726657"
+      ],
+      "notes": "Suno modes, fields, models, limits, pricing, rights"
+    },
+    "references/11-suno-prompting.md": {
+      "volatility": "medium",
+      "last_verified": "2026-10-07",
+      "sources": [
+        "https://help.suno.com/en/articles/5782721",
+        "https://help.suno.com/en/articles/2409473",
+        "https://help.suno.com/en/articles/5782849",
+        "https://help.suno.com/en/articles/8105153",
+        "https://www.suno.com/release-notes/introducing-v5-the-world-s-best-music-model",
+        "https://www.suno.com/blog/v5-5"
+      ],
+      "notes": "Suno style prompts, meta-tags, recipes"
+    },
+    "references/12-suno-workflows.md": {
+      "volatility": "medium",
+      "last_verified": "2026-10-07",
+      "sources": [
+        "https://suno.com/pricing",
+        "https://suno.com/release-notes",
+        "https://suno.com/blog/introducing-v6",
+        "https://suno.com/blog/suno-updates-tos",
+        "https://suno.com/blog/v5-5",
+        "https://suno.com/blog/covers"
+      ],
+      "notes": "Suno extend/cover/stems/personas, alternatives"
+    },
+    "references/13-vocal-control.md": {
+      "volatility": "medium",
+      "last_verified": "2026-10-07",
+      "sources": [
+        "https://help.suno.com/en/categories/550017-making-music",
+        "https://help.suno.com/en/articles/2415873",
+        "https://help.suno.com/en/articles/10153473",
+        "https://help.suno.com/en/articles/9010177",
+        "https://help.suno.com/en/articles/3484161",
+        "https://help.suno.com/en/articles/11362433"
+      ],
+      "notes": "Controlling the Suno vocal delivery"
+    },
+    "references/20-tools-and-projects.md": {
+      "volatility": "high",
+      "last_verified": "2026-10-07",
+      "sources": [
+        "https://github.com/gcui-art/suno-api",
+        "https://github.com/gochendong/suno-api",
+        "https://github.com/paperfoot/suno-cli",
+        "https://github.com/slauger/suno-cli",
+        "https://github.com/worthable/suno-sdk",
+        "https://github.com/CodeKeanu/suno-mcp"
+      ],
+      "notes": "GitHub projects, APIs, libraries, datasets, alternatives"
+    },
+    "references/30-multilingual.md": {
+      "volatility": "low",
+      "last_verified": "2026-10-07",
+      "sources": [
+        "https://www.phonetik.uni-muenchen.de/~jkirby/docs/ladd2018tone.pdf",
+        "https://www.phonetik.uni-muenchen.de/~jkirby/docs/kirby2023comparative.pdf",
+        "https://en.wikipedia.org/wiki/Lyric_setting",
+        "https://online.berklee.edu/takenote/prosody-in-music-and-songwriting/",
+        "https://digitalcommons.wayne.edu/cgi/viewcontent.cgi?article=1025&context=honorstheses",
+        "https://www.glossa-journal.org/article/id/18411/"
+      ],
+      "notes": "Per-language songwriting differences"
+    },
+    "references/40-learn-with-me.md": {
+      "volatility": "low",
+      "last_verified": "2026-10-07",
+      "sources": [
+        "https://www.retrievalpractice.org",
+        "https://journals.sagepub.com/doi/10.1177/1529100612453266",
+        "https://journals.sagepub.com/doi/10.3102/00346543073001119",
+        "https://en.wikipedia.org/wiki/Testing_effect",
+        "https://www.learningscientists.org",
+        "https://explicitinstruction.org"
+      ],
+      "notes": "LEARN mode: teaching, co-writing, critique, exercises"
+    },
+    "references/50-self-update.md": {
+      "volatility": "medium",
+      "last_verified": "2026-10-07",
+      "sources": [
+        "https://help.suno.com/",
+        "https://sunhelp.zendesk.com/",
+        "https://suno.com/blog/",
+        "https://docs.sunoapi.org/",
+        "https://agentskills.io/",
+        "https://code.claude.com/docs/en/hooks"
+      ],
+      "notes": "UPDATE mode: freshness protocol, changelog rules"
+    },
+    "references/60-knowledge-and-retrieval.md": {
+      "volatility": "low",
+      "last_verified": "2026-10-07",
+      "sources": [],
+      "notes": "Offline-vs-online retrieval, plausibility gate, anti-sameness, token discipline"
+    },
+    "assets/song-template.md": {
+      "volatility": "low",
+      "last_verified": "2026-10-07",
+      "sources": [],
+      "notes": "Finished-song output template"
+    },
+    "assets/persona-presets.json": {
+      "volatility": "low",
+      "last_verified": "2026-10-07",
+      "sources": [],
+      "notes": "Illustrative style/persona presets"
+    },
+    "assets/imagery-lexicon.json": {
+      "volatility": "low",
+      "last_verified": "2026-10-07",
+      "sources": [],
+      "notes": "Index of the offline imagery bank (see assets/imagery/)"
+    },
+    "assets/plausibility-checks.md": {
+      "volatility": "low",
+      "last_verified": "2026-10-07",
+      "sources": [],
+      "notes": "Pre-ship reality audit for lyric content"
+    }
+  }
+}

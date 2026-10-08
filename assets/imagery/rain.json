@@ -1,0 +1,177 @@
+{
+ "_theme": "rain",
+ "en": {
+  "sight": [
+   "puddle",
+   "wet asphalt",
+   "gutter",
+   "grey sky",
+   "dripping awning",
+   "fogged windshield"
+  ],
+  "sound": [
+   "drumming roof",
+   "hissing tires",
+   "gutter rush",
+   "far thunder",
+   "rain on tin",
+   "dripping eaves"
+  ],
+  "touch": [
+   "cold collar",
+   "soaked hem",
+   "wet hair",
+   "damp sleeves",
+   "slick steps",
+   "chilled knuckles"
+  ],
+  "smell": [
+   "wet pavement",
+   "petrichor",
+   "mildew",
+   "wet wool",
+   "gasoline sheen",
+   "damp earth"
+  ],
+  "taste": [
+   "rain on lips",
+   "metallic tap water",
+   "damp air",
+   "cold coffee steam",
+   "wet dust",
+   "salty spray"
+  ],
+  "objects": [
+   "umbrella",
+   "raincoat",
+   "rubber boots",
+   "windowpane",
+   "bucket",
+   "streetlight"
+  ],
+  "verbs": [
+   "drip",
+   "soak",
+   "pool",
+   "drum",
+   "streak",
+   "splash"
+  ]
+ },
+ "zh": {
+  "sight": [
+   "水洼",
+   "湿马路",
+   "屋檐",
+   "灰天",
+   "雨刷",
+   "水汽"
+  ],
+  "sound": [
+   "雨打铁皮",
+   "沙沙声",
+   "水沟声",
+   "闷雷",
+   "檐滴水",
+   "雨点打窗"
+  ],
+  "touch": [
+   "湿衣领",
+   "凉鞋帮",
+   "潮袖口",
+   "湿头发",
+   "滑石阶",
+   "冷窗玻璃"
+  ],
+  "smell": [
+   "泥土味",
+   "湿水泥",
+   "霉味",
+   "湿毛衣",
+   "雨后青草",
+   "铁锈味"
+  ],
+  "taste": [
+   "唇上的雨",
+   "凉白开",
+   "潮气",
+   "热茶",
+   "湿尘",
+   "咸雾"
+  ],
+  "objects": [
+   "雨衣",
+   "雨伞",
+   "胶靴",
+   "水沟",
+   "窗台",
+   "路灯"
+  ],
+  "verbs": [
+   "滴",
+   "淋",
+   "积",
+   "敲",
+   "淌",
+   "溅"
+  ]
+ },
+ "ms": {
+  "sight": [
+   "genangan",
+   "jalan licin",
+   "atap zink",
+   "langit kelabu",
+   "kaki lima",
+   "wap di cermin"
+  ],
+  "sound": [
+   "hujan di atap zink",
+   "gemuruh",
+   "titisan di longkang",
+   "denting genting",
+   "hujan di tingkap",
+   "air mengalir"
+  ],
+  "touch": [
+   "baju basah",
+   "rambut basah",
+   "lantai licin",
+   "hawa lembap",
+   "kaki cebur",
+   "tudung lembap"
+  ],
+  "smell": [
+   "bau tanah",
+   "bau simen basah",
+   "bau hapak",
+   "bau rumput",
+   "bau aspal",
+   "udara selepas hujan"
+  ],
+  "taste": [
+   "hujan di bibir",
+   "teh panas",
+   "hawa lembap",
+   "debu basah",
+   "air paip",
+   "masin di bibir"
+  ],
+  "objects": [
+   "payung",
+   "baju hujan",
+   "getah kasut",
+   "longkang",
+   "cermin kereta",
+   "lampu jalan"
+  ],
+  "verbs": [
+   "menitik",
+   "melekap",
+   "bermandi",
+   "menghantam",
+   "mengalir",
+   "memercik"
+  ]
+ }
+}

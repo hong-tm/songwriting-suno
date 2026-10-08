@@ -1,0 +1,85 @@
+{
+  "_note": "Illustrative persona/style presets for assembly with scripts/format_style_prompt.py. These are generic, hand-written genre descriptions — NOT official Suno data, endpoints, or documented limits. Tune freely per song.",
+  "presets": [
+    {
+      "name": "acoustic-ballad",
+      "style_prompt": "acoustic ballad, fingerpicked guitar, warm strings, intimate close vocals, gentle dynamics, heartfelt",
+      "exclude": "electronic drums, autotune, heavy distortion",
+      "vocal": "warm, soft, occasional falsetto",
+      "bpm": 72,
+      "notes": "Weddings/farewells. Keep chorus lines short (6-8 syllables) so they sing slowly."
+    },
+    {
+      "name": "synth-pop",
+      "style_prompt": "synth-pop, analog synth pads, bright arpeggios, gated drum machine, 80s retro polish, driving bass",
+      "exclude": "harsh distortion, screamed vocals",
+      "vocal": "female, airy, layered harmonies",
+      "bpm": 112,
+      "notes": "Good base for bittersweet nostalgia; pair with pre-chorus lift into a big chorus."
+    },
+    {
+      "name": "city-pop",
+      "style_prompt": "city pop, 80s japanese pop groove, funk bass, electric piano, warm brass stabs, smooth saxophone solo",
+      "exclude": "trap beats, aggressive vocals",
+      "vocal": "female, smooth, lightly jazzy phrasing",
+      "bpm": 104,
+      "notes": "Night-drive melancholy works well; suits bilingual (CJK + English) toplines."
+    },
+    {
+      "name": "trap",
+      "style_prompt": "trap, booming 808 bass, rolling hi-hats, dark piano melody, sparse beat, hard-hitting drums",
+      "exclude": "acoustic guitar, cheery whistling",
+      "vocal": "male, melodic rap with sung hooks",
+      "bpm": 140,
+      "notes": "Half-time feel at 140 BPM; meter verses tightly, hooks can repeat one punch line."
+    },
+    {
+      "name": "indie-rock",
+      "style_prompt": "indie rock, jangly guitars, driving bass, live drums, lo-fi warmth, anthemic wide chorus",
+      "exclude": "electronic drops, autotune",
+      "vocal": "male or female, raw, earnest",
+      "bpm": 128,
+      "notes": "Contrast quiet verses with loud open-chord choruses; doubles well on the last chorus."
+    },
+    {
+      "name": "lo-fi",
+      "style_prompt": "lo-fi hip hop, dusty drums, vinyl crackle, mellow electric piano, warm bass, relaxed swing",
+      "exclude": "loud vocals, stadium drums",
+      "vocal": "instrumental, or soft murmured phrases",
+      "bpm": 82,
+      "notes": "Study/chill context; mark [Instrumental Break] sections explicitly in the lyric sheet."
+    },
+    {
+      "name": "cinematic-orchestral",
+      "style_prompt": "cinematic orchestral, sweeping strings, epic percussion, choir pads, slow emotional build, wide reverb",
+      "exclude": "electric guitar, drum machine",
+      "vocal": "female, ethereal, wordless phrases",
+      "bpm": 90,
+      "notes": "Trailer/closer energy; structure should breathe — long intro and bridge are fine."
+    },
+    {
+      "name": "k-pop",
+      "style_prompt": "k-pop, punchy synths, hybrid trap drop, catchy topline, layered group vocals, chant hooks, polished production",
+      "exclude": "muddy mix, lo-fi hiss",
+      "vocal": "mixed group, bright lead, unison chant chorus",
+      "bpm": 124,
+      "notes": "Section-switching is a feature: expect pre-chorus, dance break ([Instrumental Break]), rap verse."
+    },
+    {
+      "name": "mandopop",
+      "style_prompt": "mandopop, lush piano, warm string bed, gentle R&B groove, emotional ballad build",
+      "exclude": "screamed vocals, aggressive distortion",
+      "vocal": "female, clear, delicate vibrato",
+      "bpm": 76,
+      "notes": "CJK lyrics: count one syllable per character with syllable_meter.py --lang cjk."
+    },
+    {
+      "name": "dangdut",
+      "style_prompt": "dangdut, driving kendang rhythm, bright flute melody, pentatonic hooks, upbeat dance groove",
+      "exclude": "heavy metal, dark minor-key pads",
+      "vocal": "female, playful, ornamented melisma",
+      "bpm": 130,
+      "notes": "Call-and-response hooks land well; keep verses conversational, chorus repetitive."
+    }
+  ]
+}

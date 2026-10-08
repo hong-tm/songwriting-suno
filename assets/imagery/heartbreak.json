@@ -1,0 +1,177 @@
+{
+ "_theme": "heartbreak",
+ "en": {
+  "sight": [
+   "unread messages",
+   "empty coat hook",
+   "two cups, one dry",
+   "folded clothes on the bed",
+   "black phone screen",
+   "ring mark on the table"
+  ],
+  "sound": [
+   "door latch",
+   "auto-reply tick",
+   "hum of an empty room",
+   "cassette hiss",
+   "lonely clock",
+   "one lone bus passing"
+  ],
+  "touch": [
+   "cold empty pillow",
+   "wrinkled letter",
+   "cigarette burn",
+   "ache behind the ribs",
+   "numb hands",
+   "ring groove"
+  ],
+  "smell": [
+   "ashtray",
+   "fading perfume",
+   "old envelopes",
+   "dust of a shut room",
+   "instant noodles",
+   "leather wallet"
+  ],
+  "taste": [
+   "bitter dregs",
+   "dark chocolate",
+   "salt at the corner of the mouth",
+   "stiff drink",
+   "dry toast",
+   "numb tongue"
+  ],
+  "objects": [
+   "unanswered phone",
+   "bottle cap",
+   "photo strip",
+   "diary",
+   "broken key ring",
+   "rent receipt"
+  ],
+  "verbs": [
+   "smolder",
+   "unfold",
+   "linger",
+   "drown",
+   "reread",
+   "fall through"
+  ]
+ },
+ "zh": {
+  "sight": [
+   "没回的消息",
+   "空衣钩",
+   "两只杯子一只干",
+   "叠好的衣服",
+   "黑屏的手机",
+   "桌上的杯印"
+  ],
+  "sound": [
+   "门锁咔哒",
+   "自动回复音",
+   "空屋的电流声",
+   "磁带沙沙",
+   "没人陪的挂钟",
+   "只有一辆车经过"
+  ],
+  "touch": [
+   "凉的另一半枕头",
+   "皱的信",
+   "烟头烫的疤",
+   "肋骨后面的疼",
+   "发麻的手",
+   "戒指的勒痕"
+  ],
+  "smell": [
+   "烟灰缸",
+   "将散的香水",
+   "旧信封",
+   "关了门房间的灰",
+   "泡面",
+   "钱包的皮味"
+  ],
+  "taste": [
+   "苦掉的渣",
+   "黑巧克力",
+   "嘴角的咸",
+   "烈的酒",
+   "干吐司",
+   "发麻的舌头"
+  ],
+  "objects": [
+   "没人接的手机",
+   "瓶盖",
+   "大头贴",
+   "日记本",
+   "断掉的钥匙圈",
+   "房租收据"
+  ],
+  "verbs": [
+   "呛",
+   "摊开",
+   "赖着不走",
+   "沉",
+   "重读",
+   "落空"
+  ]
+ },
+ "ms": {
+  "sight": [
+   "pesan tidak berbalas",
+   "cangkuk baju kosong",
+   "dua cawan satu kosong",
+   "baju terlipat atas katil",
+   "peliti dipadam",
+   "tanda cawan di meja"
+  ],
+  "sound": [
+   "selak pintu",
+   "bunyi jawapan mesin",
+   "bilik kosong berdengung",
+   "kaset berdesis",
+   "jam berdetik sunyi",
+   "satu bas berlalu"
+  ],
+  "touch": [
+   "bantal dingin sebelah",
+   "surat berkedut",
+   "lecur rokok",
+   "ngilu di belakang dada",
+   "tangan kebas",
+   "cincin lecet"
+  ],
+  "smell": [
+   "asap puntas",
+   "wangi menghilang",
+   "sampul surat lama",
+   "debu bilik tertutup",
+   "mee segera",
+   "kulit dompet"
+  ],
+  "taste": [
+   "tapak pahit",
+   "coklat gelap",
+   "masin di bibir",
+   "minuman keras",
+   "roti sejuk",
+   "lidah kebas"
+  ],
+  "objects": [
+   "telefon tak diangkat",
+   "tutup botol",
+   "jalur foto",
+   "buku harian",
+   "rantai kunci patah",
+   "resit sewa"
+  ],
+  "verbs": [
+   "berasap",
+   "terbuka",
+   "tertunggu",
+   "tenggelam",
+   "dibaca ulang",
+   "gagal"
+  ]
+ }
+}

@@ -1,0 +1,177 @@
+{
+ "_theme": "sea-coast",
+ "en": {
+  "sight": [
+   "breaking foam",
+   "rusty pier",
+   "harbor lights",
+   "circling gull",
+   "driftwood",
+   "low-tide flats"
+  ],
+  "sound": [
+   "gull cry",
+   "halyard clink",
+   "surf on gravel",
+   "foghorn",
+   "boat engine",
+   "steps on wet sand"
+  ],
+  "touch": [
+   "salt-stiff hair",
+   "rope burn",
+   "cold ankle water",
+   "wet rope",
+   "shell edge",
+   "gritty boardwalk"
+  ],
+  "smell": [
+   "ocean brine",
+   "low-tide sulfur",
+   "fish market",
+   "hull tar",
+   "washed kelp",
+   "fresh bait"
+  ],
+  "taste": [
+   "salt on lips",
+   "spray",
+   "kelp flavor",
+   "oyster brine",
+   "thick chowder",
+   "warm beer"
+  ],
+  "objects": [
+   "compass",
+   "buoy",
+   "sea chest",
+   "lighthouse",
+   "tide table",
+   "fishing net"
+  ],
+  "verbs": [
+   "swell",
+   "hide",
+   "moor",
+   "wash ashore",
+   "spill",
+   "surge"
+  ]
+ },
+ "zh": {
+  "sight": [
+   "碎浪白沫",
+   "锈了的栈桥",
+   "港口灯",
+   "盘旋的海鸥",
+   "浮木",
+   "退潮的滩"
+  ],
+  "sound": [
+   "海鸥叫",
+   "缆绳碰撞",
+   "拍石滩的浪",
+   "雾笛",
+   "渔船柴油机",
+   "湿沙上的脚步"
+  ],
+  "touch": [
+   "头发上的盐霜",
+   "绳子勒手",
+   "凉脚踝的水",
+   "湿缆绳",
+   "贝壳的刃",
+   "木板缝里的沙"
+  ],
+  "smell": [
+   "海腥",
+   "退潮的味",
+   "鱼市",
+   "船底沥青",
+   "洗过的海带",
+   "鱼饵"
+  ],
+  "taste": [
+   "嘴唇上的盐",
+   "飞沫",
+   "海带的鲜",
+   "生蚝的咸",
+   "厚汤",
+   "不凉的啤酒"
+  ],
+  "objects": [
+   "罗盘",
+   "浮标",
+   "船用木箱",
+   "灯塔",
+   "潮汐表",
+   "渔网"
+  ],
+  "verbs": [
+   "涨潮",
+   "退潮",
+   "泊",
+   "冲上岸",
+   "涌",
+   "起沫"
+  ]
+ },
+ "ms": {
+  "sight": [
+   "buih pecah",
+   "jeti berkarat",
+   "lampu pelabuhan",
+   "camar berpusing",
+   "kayu hanyut",
+   "lumpur surutan"
+  ],
+  "sound": [
+   "pekik camar",
+   "tali berdenting",
+   "ombak di batu",
+   "siren kabut",
+   "enjin bot",
+   "langkah di pasir basah"
+  ],
+  "touch": [
+   "rambut berkanat",
+   "tali lecet",
+   "air dingin di buku lali",
+   "tali basah",
+   "pinggir kerang",
+   "debu pantai"
+  ],
+  "smell": [
+   "asin laut",
+   "bau surutan",
+   "pasar ikan",
+   "tar kapal",
+   "rumput laut",
+   "umpan"
+  ],
+  "taste": [
+   "masin di bibir",
+   "sembur ombak",
+   "rumput laut",
+   "kerang masin",
+   "sup pekat",
+   "bir hangat"
+  ],
+  "objects": [
+   "kompas",
+   "boya",
+   "kotak kapal",
+   "rumah api",
+   "jadual pasang surut",
+   "jaring ikan"
+  ],
+  "verbs": [
+   "menggulung",
+   "surut",
+   "berlabuh",
+   "menghempas",
+   "memuncak",
+   "pasang"
+  ]
+ }
+}

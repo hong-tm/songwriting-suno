@@ -1,0 +1,177 @@
+{
+ "_theme": "leaving-farewell",
+ "en": {
+  "sight": [
+   "train doors",
+   "waving hand",
+   "departure board",
+   "packed suitcase",
+   "tail lights",
+   "half-empty drawer"
+  ],
+  "sound": [
+   "platform announcement",
+   "wheels pulling out",
+   "trunk slam",
+   "tape tearing",
+   "bus air hiss",
+   "departure chime"
+  ],
+  "touch": [
+   "heavy bag strap",
+   "ticket in the fist",
+   "cold handle",
+   "hug let go",
+   "tailwind of exhaust",
+   "worn suitcase grip"
+  ],
+  "smell": [
+   "diesel fume",
+   "cardboard box",
+   "airport coffee",
+   "cabin air",
+   "wet platform",
+   "old-closet cedar"
+  ],
+  "taste": [
+   "station coffee",
+   "dry crackers",
+   "flat soda",
+   "salty throat",
+   "gone-cold meal",
+   "chewed pen cap"
+  ],
+  "objects": [
+   "train ticket",
+   "suitcase",
+   "boarding pass",
+   "letter",
+   "shoebox of cards",
+   "key left behind"
+  ],
+  "verbs": [
+   "wave",
+   "board",
+   "shrink",
+   "unload",
+   "drift",
+   "turn away"
+  ]
+ },
+ "zh": {
+  "sight": [
+   "车门",
+   "挥手的背影",
+   "车次屏",
+   "塞满的行李箱",
+   "刹车尾灯",
+   "半空的抽屉"
+  ],
+  "sound": [
+   "站台广播",
+   "车轮启动",
+   "后备厢合上",
+   "撕胶带",
+   "大巴气刹",
+   "发车提示音"
+  ],
+  "touch": [
+   "沉的包带",
+   "车票攥在手心",
+   "冰凉的拉手",
+   "松开的手",
+   "尾气扑脸",
+   "旧箱子提手"
+  ],
+  "smell": [
+   "柴油味",
+   "纸箱",
+   "机场咖啡",
+   "机舱冷气",
+   "湿站台",
+   "旧衣柜樟脑"
+  ],
+  "taste": [
+   "加油站的咖啡",
+   "干饼干",
+   "跑气的汽水",
+   "嗓子里咸",
+   "凉掉的饭",
+   "咬过的笔帽"
+  ],
+  "objects": [
+   "火车票",
+   "行李箱",
+   "登机牌",
+   "旧信",
+   "鞋盒里的卡片",
+   "留下的钥匙"
+  ],
+  "verbs": [
+   "挥手",
+   "上车",
+   "变小",
+   "卸下",
+   "漂离",
+   "转身"
+  ]
+ },
+ "ms": {
+  "sight": [
+   "pintu gerabak",
+   "tangan melambai",
+   "papan jadual",
+   "beg pakaian penuh",
+   "lampu belakang",
+   "laci separuh kosong"
+  ],
+  "sound": [
+   "siaran stesen",
+   "roda bergerak",
+   "bunyi beg ditutup",
+   "getah sobek",
+   "bas menghembus",
+   "denting loceng berangkat"
+  ],
+  "touch": [
+   "tali beg berat",
+   "tiket digenggam",
+   "pemegang dingin",
+   "pelukan terlepas",
+   "asap di muka",
+   "pegangan lusuh"
+  ],
+  "smell": [
+   "asap diesel",
+   "kotak kadbok",
+   "kopi lapangan terbang",
+   "udara kabin",
+   "peron lembap",
+   "almari lama"
+  ],
+  "taste": [
+   "kopi stesen",
+   "biskut kering",
+   "soda rata",
+   "tekak masin",
+   "nasi dingin",
+   "tutup pen digigit"
+  ],
+  "objects": [
+   "tiket",
+   "beg pakaian",
+   "kad penerbangan",
+   "surat",
+   "kotak surat",
+   "kunci tertinggal"
+  ],
+  "verbs": [
+   "melambai",
+   "naik",
+   "mengecil",
+   "membongkar",
+   "melangkah",
+   "berpaling"
+  ]
+ }
+}

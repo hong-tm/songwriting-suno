@@ -1,0 +1,177 @@
+{
+ "_theme": "summer",
+ "en": {
+  "sight": [
+   "sprinkler arc",
+   "ceiling fan",
+   "boardwalk",
+   "lightning without thunder",
+   "long dusk",
+   "hydrant spray"
+  ],
+  "sound": [
+   "window a/c rattle",
+   "hose sputter",
+   "cheap guitar",
+   "dusk cicadas",
+   "ice cream truck bell",
+   "screen door slap"
+  ],
+  "touch": [
+   "airless porch heat",
+   "wet neck after the pool",
+   "sun-hot seat",
+   "fingerprints on glass",
+   "sand in the shoe",
+   "folded linen"
+  ],
+  "smell": [
+   "suntan lotion",
+   "fresh-cut grass",
+   "grill starter fluid",
+   "melted ice cream",
+   "hot dust",
+   "overripe fruit"
+  ],
+  "taste": [
+   "melon",
+   "bottled cola",
+   "mango",
+   "lemonade pulp",
+   "spilled milkshake",
+   "sweat on the neck"
+  ],
+  "objects": [
+   "straw hat",
+   "popsicle stick",
+   "pool ladder",
+   "awning",
+   "beach towel",
+   "bug zapper"
+  ],
+  "verbs": [
+   "swelter",
+   "soak",
+   "run",
+   "melt",
+   "circulate",
+   "steam"
+  ]
+ },
+ "zh": {
+  "sight": [
+   "洒水器的弧",
+   "吊扇",
+   "木板路",
+   "光打雷",
+   "很长很长的黄昏",
+   "消防水柱"
+  ],
+  "sound": [
+   "窗式空调响",
+   "水管噗噗",
+   "破吉他",
+   "傍晚知了",
+   "雪糕车铃",
+   "纱门拍打"
+  ],
+  "touch": [
+   "院子里无风的热",
+   "出水池湿脖子",
+   "烫屁股的座椅",
+   "玻璃上的指纹",
+   "鞋里的沙",
+   "凉席的纹"
+  ],
+  "smell": [
+   "防晒霜",
+   "刚割的草",
+   "点火液",
+   "化掉的冰淇淋",
+   "晒热的尘土",
+   "过熟的水果"
+  ],
+  "taste": [
+   "西瓜",
+   "玻璃瓶汽水",
+   "芒果",
+   "带果肉的柠檬水",
+   "洒了的奶昔",
+   "脖子上汗的咸"
+  ],
+  "objects": [
+   "草帽",
+   "雪糕棒",
+   "泳池扶梯",
+   "遮阳棚",
+   "沙滩浴巾",
+   "灭蚊灯"
+  ],
+  "verbs": [
+   "冒汗",
+   "泡",
+   "跑",
+   "化",
+   "转圈",
+   "蒸"
+  ]
+ },
+ "ms": {
+  "sight": [
+   "matahari terik",
+   "kipas siling",
+   "jalan papan",
+   "kilat tanpa guruh",
+   "senja panjang",
+   "paip kebakaran"
+  ],
+  "sound": [
+   "kipas berpusing",
+   "hos menyembur",
+   "gitar",
+   "jangkrik senja",
+   "loceng van ais",
+   "pintu berdebum"
+  ],
+  "touch": [
+   "panas tanpa angin",
+   "leher basah",
+   "tempat duduk panas",
+   "tapak sidik di kaca",
+   "pasir di kasut",
+   "sarung nipis"
+  ],
+  "smell": [
+   "losyen",
+   "rumput muda",
+   "minyak api",
+   "ais melebur",
+   "debu panas",
+   "buah terlalu masak"
+  ],
+  "taste": [
+   "tembikai",
+   "cola botol",
+   "mangga",
+   "air limau",
+   "milkshake tumpah",
+   "peluh di leher"
+  ],
+  "objects": [
+   "topi jerami",
+   "kayu ais krim",
+   "tangga kolam",
+   "peneduh",
+   "tuala pantai",
+   "lampu anti nyamuk"
+  ],
+  "verbs": [
+   "berpeluh",
+   "memancar",
+   "berlari",
+   "melebur",
+   "mendidih",
+   "menyerap"
+  ]
+ }
+}

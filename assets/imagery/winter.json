@@ -1,0 +1,172 @@
+{
+ "_theme": "winter",
+ "en": {
+  "sight": [
+   "frozen pane",
+   "scarf over the face",
+   "smoke column",
+   "salt lines on the road",
+   "animal tracks",
+   "eave icicles"
+  ],
+  "sound": [
+   "boot crunch",
+   "radiator ticks",
+   "sleet against glass",
+   "ice skate hiss",
+   "wind at the window",
+   "shovel scrape"
+  ],
+  "touch": [
+   "stinging cheeks",
+   "fingers inside wool",
+   "hot mug through gloves",
+   "bitten ears",
+   "dry cracked skin",
+   "warm radiator"
+  ],
+  "smell": [
+   "wood smoke",
+   "boiling soup",
+   "wet gloves",
+   "orange peel",
+   "radiator dust",
+   "mothball closet"
+  ],
+  "taste": [
+   "cocoa",
+   "orange segments",
+   "spiced cider",
+   "numb tongue",
+   "floating marshmallow",
+   "clean snow on the tongue"
+  ],
+  "objects": [
+   "stove",
+   "wool socks",
+   "thick quilt",
+   "sled",
+   "thermos",
+   "fireplace"
+  ],
+  "verbs": [
+   "frost",
+   "huddle",
+   "shovel",
+   "defrost",
+   "shiver",
+   "bank the fire"
+  ]
+ },
+ "zh": {
+  "sight": [
+   "窗上霜花",
+   "裹着的围巾",
+   "烟囱烟柱",
+   "撒盐的路面",
+   "雪地脚印",
+   "屋檐冰溜"
+  ],
+  "sound": [
+   "踩雪嘎吱",
+   "暖气片响",
+   "冻雨打窗",
+   "冰刀刮冰",
+   "窗缝风声",
+   "铲雪声"
+  ],
+  "touch": [
+   "腮帮刺疼",
+   "毛线里的手指",
+   "隔着杯套的烫",
+   "冻红的耳朵",
+   "干裂的皮肤",
+   "暖气片烘脚"
+  ],
+  "smell": [
+   "柴烟",
+   "熬白菜",
+   "湿手套",
+   "橘子皮",
+   "暖气片的灰",
+   "大衣樟脑"
+  ],
+  "taste": [
+   "热可可",
+   "橘子瓣",
+   "姜汤热气",
+   "麻了的舌头",
+   "漂浮的棉花糖",
+   "干净雪在舌上"
+  ],
+  "objects": [
+   "火炉",
+   "毛线袜",
+   "厚棉被",
+   "雪橇",
+   "暖水瓶",
+   "壁炉"
+  ],
+  "verbs": [
+   "结霜",
+   "蜷",
+   "铲雪",
+   "化冻",
+   "打颤",
+   "封炉"
+  ]
+ },
+ "ms": {
+  "sight": [
+   "kabut pekat",
+   "cermin berembun",
+   "api unggun",
+   "selimut tebal",
+   "udara sejuk gunung",
+   "asap tepi jalan"
+  ],
+  "sound": [
+   "angin dingin",
+   "bunyi kayu meletup",
+   "daun bergerak",
+   "hembusan lembap"
+  ],
+  "touch": [
+   "sejuk menggigit",
+   "hawa gunung",
+   "kaki dingin simen",
+   "kabus basah",
+   "sarung tangan lembap",
+   "teh hangat di tangan"
+  ],
+  "smell": [
+   "kabus",
+   "kayu api",
+   "sup panas",
+   "kapur barus",
+   "asap unggun"
+  ],
+  "taste": [
+   "kopi panas",
+   "sup hangat",
+   "teh panas",
+   "roti hangat",
+   "gula batu"
+  ],
+  "objects": [
+   "jaket",
+   "selimut tebal",
+   "sarung tangan",
+   "api unggun",
+   "termos",
+   "kain api"
+  ],
+  "verbs": [
+   "menggigil",
+   "menghangatkan",
+   "memeluk",
+   "menghela",
+   "menjaga api"
+  ]
+ }
+}
