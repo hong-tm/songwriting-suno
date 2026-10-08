@@ -8,6 +8,26 @@ See `references/50-self-update.md` for the full update protocol.
 
 ---
 
+## 2026-10-08 — craft gate + spec sheet, and companion-library routing
+
+- **Touched:** `references/70-craft-gate-and-spec.md` (new),
+  `references/00-index.md`, `SKILL.md`, `assets/freshness.json`,
+  `evals/evals.json`, `README.md`
+- **Facts changed:** none about Suno — this adds craft method + routing.
+  - Added `references/70-craft-gate-and-spec.md`: the five-question
+    pre-writing gate + stranger test, the LYR-SPEC/ARR-SPEC spec sheet,
+    the AI-tell audit, and the routing table to the companion libraries.
+  - Wired in the two MIT companion libraries by `jtydhr88`
+    (`lw-*` = lyric, `mc-*` = composition): **12 kept active** in
+    `~/.agents/skills/` (auto-trigger) and **35 parked** in
+    `~/.agents/skills-library/` (read by path, zero always-on cost).
+  - This bundle stays the quick Suno pipeline; deep craft is delegated to the
+    companion libraries rather than duplicated.
+- **Sources:** https://github.com/jtydhr88/lyric-writing-skills ,
+  https://github.com/jtydhr88/music-composition-skills
+- **Freshness:** `references/70-craft-gate-and-spec.md` registered (low,
+  2026-10-08)
+
 ## 2026-10-07 — knowledge base: offline imagery, plausibility, retrieval & variation
 
 - **Touched:** `references/60-knowledge-and-retrieval.md` (new),

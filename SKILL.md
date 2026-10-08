@@ -97,6 +97,7 @@ Freshness: before quoting any Suno limit/pricing/feature as fact, if you have no
 | `references/40-learn-with-me.md` | LEARN mode: teaching, co-writing, critique, exercises, level assessment |
 | `references/50-self-update.md` | UPDATE mode: freshness protocol, staleness thresholds, changelog |
 | `references/60-knowledge-and-retrieval.md` | Offline KB vs online retrieval, plausibility gate, anti-sameness/variation, token discipline |
+| `references/70-craft-gate-and-spec.md` | Pre-writing gate, LYR-/ARR-SPEC sheet, AI-tell audit, routing to the `lw-*`/`mc-*` companion libraries |
 | `references/00-index.md` | Full annotated index of everything |
 | `CHANGELOG.md` | Log of factual updates to this skill (skill root) |
 
@@ -124,6 +125,10 @@ Freshness: before quoting any Suno limit/pricing/feature as fact, if you have no
   `assets/imagery/<theme>.json` theme, and vary at least three axes from your
   last song (see `references/60-knowledge-and-retrieval.md`). Go online only for
   real facts you cannot know offline.
+- **Gate before you write**: for any non-trivial lyric, run the five-question
+  pre-writing gate and the stranger test, and offer the spec sheet — see
+  `references/70-craft-gate-and-spec.md`. For professional depth, hand off to the
+  companion `lw-*`/`mc-*` libraries rather than reinventing their craft here.
 
 ## Output template
 
@@ -165,5 +170,7 @@ Helper scripts (run with `python3`):
 - `scripts/source_check.py` — helper module for source-URL validation, imported by `check_freshness.py` (not run directly).
 
 Offline assets (read cheaply): `assets/imagery-lexicon.json` is the *index* to the imagery bank — read only the ONE theme you need from `assets/imagery/<theme>.json`, never all of them; `assets/plausibility-checks.md` is the pre-ship reality audit; `assets/power-words.json` holds concrete swaps for generic/clichéd language; `references/60-knowledge-and-retrieval.md` covers offline-vs-online and anti-sameness.
+
+Companion craft libraries (MIT, by jtydhr88): 12 skills are **active** in `~/.agents/skills/` (`lw-workflow`, `lw-song-intent`, `lw-structure`, `lw-imagery`, `lw-mandarin`, `lw-tone-check`, `lw-ai-tell-audit`, `mc-workflow`, `mc-arrangement-arch`, `mc-vocal-direction`, `mc-render-compile`, `mc-ai-tell-audit`); 35 more are **parked** at `~/.agents/skills-library/` (read by path when needed). Routing table: `references/70-craft-gate-and-spec.md` §5. Hand off depth to them; keep this bundle for the Suno pipeline and tooling.
 
 After any change to the bundle, run `python3 scripts/selftest.py` — it must exit 0.

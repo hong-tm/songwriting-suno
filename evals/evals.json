@@ -194,6 +194,29 @@
         "Prefers cutting or generalizing an unverified load-bearing detail",
         "Cites assets/plausibility-checks.md as the gate"
       ]
+    },
+    {
+      "id": "craft-gate-before-writing",
+      "prompt": "write me a song about my ex, something sad but not too soppy",
+      "expected_behavior": "Before drafting, run the five-question pre-writing gate in references/70-craft-gate-and-spec.md (lyric kind, the one thing, addressee, moment, anchor) and the stranger test; offer the LYR-SPEC spec sheet since the user may iterate. Do not start writing verses before the gate is answered.",
+      "success_criteria": [
+        "references/70-craft-gate-and-spec.md is read; the gate is answered (or recorded as deliberate unknowns) before lyric lines are drafted",
+        "The five fields are each addressed (kind, one-thing, addressee, moment, anchor)",
+        "Default is NOT narrative unless the ask implies it",
+        "The stranger test is applied or explicitly offered",
+        "The spec sheet is offered as an optional deliverable"
+      ]
+    },
+    {
+      "id": "companion-library-routing",
+      "prompt": "do a professional arrangement breakdown and a tone-melody audit for my Mandarin ballad",
+      "expected_behavior": "Route to the companion libraries per references/70-craft-gate-and-spec.md §5: use the active skills (e.g. mc-arrangement-arch and mc-workflow for ARR-SPEC; lw-mandarin and lw-tone-check for the tone-melody audit). Do not reinvent their craft; for parked skills, read them by path from ~/.agents/skills-library/. Keep this bundle for the Suno compile/verify tail.",
+      "success_criteria": [
+        "The active vs parked distinction is respected (12 active, 35 parked)",
+        "Relevant active companion skills are used rather than reimplemented here",
+        "Any parked skill is read by path from ~/.agents/skills-library/",
+        "mc-render-compile / the Suno compile tail is used for the final prompt"
+      ]
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "tiers": {
     "high": {
       "warn_days": 30,
@@ -221,6 +221,15 @@
       "last_verified": "2026-10-07",
       "sources": [],
       "notes": "Offline-vs-online retrieval, plausibility gate, anti-sameness, token discipline"
+    },
+    "references/70-craft-gate-and-spec.md": {
+      "volatility": "low",
+      "last_verified": "2026-10-08",
+      "sources": [
+        "https://github.com/jtydhr88/lyric-writing-skills",
+        "https://github.com/jtydhr88/music-composition-skills"
+      ],
+      "notes": "Pre-writing gate, spec sheet, AI-tell audit, lw-*/mc-* routing table"
     },
     "assets/song-template.md": {
       "volatility": "low",

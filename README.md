@@ -46,6 +46,7 @@ references/              topic files, read on demand
   40-learn-with-me.md    LEARN mode
   50-self-update.md      UPDATE mode
   60-knowledge-and-retrieval.md  offline KB + online retrieval protocol
+  70-craft-gate-and-spec.md      pre-writing gate, spec sheet, companion routing
 scripts/                 runnable tools (prefer running over reading)
   format_style_prompt.py assemble a Suno style + exclude prompt
   syllable_meter.py      count syllables / check a target meter
@@ -70,6 +71,20 @@ assets/                  templates, presets, registries, offline data
 python3 scripts/selftest.py        # must exit 0
 python3 scripts/check_freshness.py --check-coverage
 ```
+
+## Companion libraries
+
+This skill routes deep craft work to two MIT skill libraries by `jtydhr88`
+(`lw-*` lyric writing, `mc-*` music composition):
+
+- **12 active** in `~/.agents/skills/` (auto-loaded): `lw-workflow`,
+  `lw-song-intent`, `lw-structure`, `lw-imagery`, `lw-mandarin`, `lw-tone-check`,
+  `lw-ai-tell-audit`, `mc-workflow`, `mc-arrangement-arch`, `mc-vocal-direction`,
+  `mc-render-compile`, `mc-ai-tell-audit`.
+- **35 parked** in `~/.agents/skills-library/` (not in the menu; read by path
+  when needed).
+
+Routing table: `references/70-craft-gate-and-spec.md` §5.
 
 ## Data & privacy
 

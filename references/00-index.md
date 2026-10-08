@@ -48,6 +48,12 @@ matches the task; do not read them all at once.
 |---|---|---|
 | `60-knowledge-and-retrieval.md` | Offline-first knowledge base vs online retrieval (when/what/how, citation and no-fabrication rules), the plausibility gate, the anti-sameness/variation discipline and ledger, an operational "what good means" rubric, token discipline, and the honest ceiling. | Before writing anything fact- or culture-laden, when output is getting samey, or when deciding whether to search. |
 
+## Craft gate & companion libraries
+
+| File | Covers | Read when |
+|---|---|---|
+| `70-craft-gate-and-spec.md` | The five-question pre-writing gate + the stranger test, the LYR-SPEC/ARR-SPEC spec sheet (handoff / controlled A/B / compile source / acceptance baseline), the AI-tell audit, and the routing table to the `lw-*`/`mc-*` companion libraries (12 active, 35 parked). | Before drafting a non-trivial lyric, when iterating against a spec, or when handing off to the companion libraries. |
+
 ## Skill maintenance
 
 | File | Covers | Read when |
@@ -94,3 +100,8 @@ Extended once more 2026-10-07 with an offline knowledge base
 (`assets/imagery-lexicon.json` + `assets/imagery/` + `assets/plausibility-checks.md`)
 and `60-knowledge-and-retrieval.md` (offline-vs-online retrieval, plausibility
 gate, anti-sameness discipline, token discipline).
+
+Extended 2026-10-08 with the craft gate + spec sheet and routing to the two MIT
+companion libraries (`lw-*`/`mc-*`, by jtydhr88): `70-craft-gate-and-spec.md`,
+with 12 libraries active in `~/.agents/skills/` and 35 parked in
+`~/.agents/skills-library/`.
