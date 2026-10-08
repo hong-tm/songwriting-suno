@@ -164,6 +164,6 @@ Helper scripts (run with `python3`):
 - `scripts/selftest.py` — one cwd-independent command that runs the whole bundle's checks (script help, unit tests, freshness coverage, tool fixtures); it must exit 0.
 - `scripts/source_check.py` — helper module for source-URL validation, imported by `check_freshness.py` (not run directly).
 
-Offline assets (read cheaply): `assets/imagery-lexicon.json` is the *index* to the imagery bank — read only the ONE theme you need from `assets/imagery/<theme>.json`, never all of them; `assets/plausibility-checks.md` is the pre-ship reality audit; `references/60-knowledge-and-retrieval.md` covers offline-vs-online and anti-sameness.
+Offline assets (read cheaply): `assets/imagery-lexicon.json` is the *index* to the imagery bank — read only the ONE theme you need from `assets/imagery/<theme>.json`, never all of them; `assets/plausibility-checks.md` is the pre-ship reality audit; `assets/power-words.json` holds concrete swaps for generic/clichéd language; `references/60-knowledge-and-retrieval.md` covers offline-vs-online and anti-sameness.
 
 After any change to the bundle, run `python3 scripts/selftest.py` — it must exit 0.

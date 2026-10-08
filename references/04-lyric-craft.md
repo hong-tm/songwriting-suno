@@ -65,6 +65,19 @@ Line 2  The reframe that makes the final chorus hit harder   (Y)
 
 Blume's three steps, in order: (1) **Action**, (2) **Imagery**, (3) **Detail**. Establish time and location so the listener stands somewhere. State nothing the scene can imply: don't announce "I was sad", show the cold coffee, the unanswered phone, the coat still on the hook. Verses carry "the images and emotions the writer wishes to express"; the chorus is where the feeling gets named, if it gets named at all. Point of view choices (below) change how immediate the imagery feels.
 
+**Davis's operational rules (concrete over abstract).**
+
+1. **Concrete over abstract.** Name things you could photograph ("piña colada", not "escape"); abstract nouns read "shadowy and impersonal" (Davis, *The Craft of Lyric Writing*, ch. 14).
+2. **Particular over general.** *chestnuts in blossom* not "flowers"; *tangerine* not "snack"; *Oldsmobile* not "automobile". "Particular equals sharp; general equals hazy."
+3. **Replace tame verbs.** "He **walked** into the barroom" → *ambled / sauntered / stormed / swaggered / stumbled* — each encodes a different emotion for free. See `assets/power-words.json`.
+4. **Intensify with theme words.** Build a lexical field for the subject (Leiber/Stoller's "Black Denim Trousers": *Highway 101, axle grease, rumblin' engine, screamin' diesel*).
+5. **Use sensory words** — and prefer **polysensate** ones (*mint, ivory, butterscotch, sandpaper, snow*) that trigger several senses at once and "make the deepest grooves in the memory."
+6. **Progression of images:** order pictures from *distance → close-up* (distant things can be seen/heard; to be touched/smelled/tasted they must be near). Hartford's "Gentle on My Mind" narrows to "cupped hands 'round a tin can."
+7. **Create a Situation / Find a Symbol** — orchestrate objects and events that *produce* the feeling: "orange juice for one" = alone; "extra blankets for the cold" = no bedmate. **"Through the particular, not the general, the universal is expressed."**
+8. **The warrant — T.S. Eliot's _objective correlative_:** "a set of objects, a situation, or a chain of events" that evokes the emotion on contact. Mallarmé: **"To name is to destroy, to evoke is to create."** Test: if a line names the emotion, rewrite it to evoke it.
+
+**Stolpe: external vs internal detail.** *External* = a concrete action or object that provokes an image ("crisp, brittle oak leaves"); *internal* = a thought/emotion that does not ("I thought it was love"). Generate external detail; the showing-to-telling ratio is genre-dependent (country drops you at the bar; pop dissolves place and time for broad relatability). A too-figurative lyric over the wrong musical "scene" reads as **cheesy** — fix a floaty emotion by writing it through **one consistent "lens" object** (e.g., a jet for power/danger/impulse).
+
 ## Prosody: fitting words to music
 
 - **Stress alignment.** Words carry stressed and unstressed syllables; a well-set lyric aligns the word's stress with the music's beats. A setting that fights the word is "mis-stressed" ("to-DAY" sung as "TO-day").
@@ -75,6 +88,11 @@ Blume's three steps, in order: (1) **Action**, (2) **Imagery**, (3) **Detail**. 
 - **Contrast.** Pattison's "form follows function": change line length, rhyme density, or phrasing between sections so the form mirrors the meaning. Short phrases with dense consecutive rhymes read fast; long phrases with spread rhymes read slow.
 - **Open vowels.** An open (low) vowel, with the tongue far from the roof of the mouth (like "ah"), is the practical choice under long sustained notes. Flag: this is vocal-practice consensus, asserted but not confirmed by a high-tier fetched source.
 - **Verse vs. chorus rhythm.** Verses take shorter notes and more syncopation; choruses take longer notes with less syncopation.
+- **Sweaty words vs sign-holders (Pattison).** Put content words (nouns, verbs, adjectives, adverbs) on strong beats; keep *sign-holder* function words (*of, to, the, and, was, might, I, who*) off strong, long, or high notes.
+- **Never invert lexical stress.** Set "come back" so it keeps its natural stress; setting it like "bridegroom" ("COMback") "sounds unnatural… we lose the illusion of a real person making a real statement."
+- **High notes shout their word.** Whatever sits under the melody's peak is emphasized — never park an *at/the/in* there.
+- **Roadmap alignment.** Lyric phrase boundaries must match melodic phrase boundaries; if they diverge, change the music, change the lyric, or **repeat the previous phrase's last word at the start of the next** to bridge.
+- **Open vowels** (ah, oh) sustain best under long notes; save closed vowels for short ones. (Craft consensus, not a settled source; see uncertainty flag below.)
 
 ## Rhyme: the full taxonomy
 
@@ -118,9 +136,18 @@ Perfect rhyme's precise condition: the stressed vowel is identical, everything a
 - **Internal rhyme** sits inside a line or between internal phrases: "The guests are met, the feast is set"; Dylan: "Once upon a time you dressed so fine / threw the bums a dime in your prime".
 - **Multisyllabic rhyme** matches whole phrases: AZ, "young and gifted / my tongue's prolific". Rap builds long chains of these out of slant matches.
 
-## Metaphor
+## Generating fresh images (object writing, metaphor drills)
 
-Berklee gives metaphor multiple dedicated lessons ("Working with Metaphors, Delaying the Tonic"; "Metaphors, Second-Person Narrative, Rhyme Types"). Use metaphor to say the thing without naming it, and pair it with a deliberate POV so the image has a body.
+Object writing is the *generation* engine; keep it concrete and sense-bound, not conceptual. Stolpe's keyword rule: don't write about "Aunt June", write "Aunt June cooking in your childhood kitchen" — a person *plus* a place. Destination writing uses a place/person/time as the prompt. Underline **external** details, parenthesise internal ones; the external list is your word library.
+
+**Pattison's metaphor drills (manufacture images on demand, don't wait for inspiration):**
+
+- **Playing in keys** — free-associate a "diatonic" set around a fundamental word, then collide sets (*tide* → moon, recede, beach; *power* → Ali, avalanche, army, socket). Link terms "play in the same key." See `assets/power-words.json` for `metaphor_seed_terms`.
+- **Blind collisions** — combine a random adjective with a random noun ("decaffeinated rainbow", "smoky conversation"); **noun+verb** collisions beat adjective+noun ("Verbs are the power amplifiers of language").
+- **Expressed identity, three ways** — force each pair through *x is y* / *the y of x* / *x's y*: summer is a Rolls-Royce → the Rolls-Royce of summer → summer's Rolls-Royce.
+- **The two-question release** — "What characteristics does this idea have?" then "What else has those characteristics?" The second question generates the fresh image.
+
+**Metaphor vs simile = focus control.** A metaphor transfers focus to the vehicle ("my love is an engine" keeps us looking at the car); a simile keeps focus on the speaker ("my love's like an engine") and suits a one-off comparison. Commit to a metaphor for a whole song; use simile sparingly. Berklee teaches metaphor with dedicated lessons ("Working with Metaphors, Delaying the Tonic"; "Metaphors, Second-Person Narrative, Rhyme Types").
 
 ## Point of view, tense, and address
 
@@ -129,6 +156,41 @@ Berklee gives metaphor multiple dedicated lessons ("Working with Metaphors, Dela
 - **Second person (you):** direct address; imperative lines can drop "you" entirely ("Come back").
 - **Present tense** buys immediacy; past tense tells.
 - Berklee pairs POV with craft drills: "Who Writing" (lesson 2), "Where Writing, First-Person Narrative" (lesson 4), "Second-Person Narrative" (lesson 6). Keep one POV per section; shifting POV mid-song is a meaning choice, not an accident.
+
+## Hook craft: the one idea
+
+- **The song has one idea.** Everything serves it: the central idea is usually the title, is the chorus's job to hammer, and must survive a **one-sentence paraphrase** ("Same Old Lang Syne" = "nothing lasts forever"). Davis calls this "an identifiable idea" + "a memorable title."
+- **A hook is a function, not just a section.** It can be melodic, lyrical, rhythmic, or a production sound; strong songs layer at least two.
+- **Melodic hooks:** ≤5 distinct notes; a wide leap (4th/5th) then stepwise resolution; rhythmic placement (syncopation) matters more than pitch.
+- **Lyrical hooks:** under ~7 words, concrete or unexpected, emotionally loaded. **Repeat 2–3× to plant, then vary on the 3rd–4th pass** ("pure repetition becomes wallpaper").
+- **On-message:** the hook reinforces the title, the story, and the emotional core — not just the melodic peak.
+- **Power positions:** chorus first or last line (safest); put the biggest line where a turnaround follows so it isn't crowded.
+- **Title devices (a generator bank):** antonyms/contrast ("Full Moon and Empty Arms"), alliteration ("Tender Trap"), Atlas/Calendar/Rainbow (capitals/days/colors — "Purple Rain"), conversation/colloquialism ("My Heart Stood Still"), maxim/proverb, **word switch** (twist an old saw — "Can't Teach My Old Heart New Tricks"), and one-word titles. Generic titles ("You and I", "I Miss You") kill curiosity.
+- **Hook tests:** one-sentence idea present; title works standalone on a playlist; **recall** after 30 min; **isolation** (survives without production); **noise** (cuts a crowded room); **variation** (still the hook over a changed chord).
+
+## Anti-cliché: detect and replace
+
+Cliché is "prefabricated material that's been reassembled again and again" (Pattison): dead metaphors ("broken heart", "dark night", "burning love"), clichéd rhymes (knowledge/college), and threadbare phrases.
+
+- **The detector.** Read aloud and **circle every phrase you've heard before**; for each, ask "what is the specific, original way to express this?" `assets/power-words.json` ships a `dead_metaphor_blacklist` and `cliche_rhyme_pairs`.
+- **Word switches (Davis).** Give an old saw a twist and it revives: "Hurts So Good", "You Could've Heard a Heart Break".
+- **Freshness = friction.** Force unlike ideas together ("an army is a rabid wolf"); use the drills above. Metric: awakening shock — "break my heart" (snore) vs. "feather canyons" (Joni).
+- **Prefer specificity.** Swap "You'd Be So Nice To Come Home To" → "You'd be so nice **by the fire**"; "I Can't Make You Love Me" → "**Turn down the lights, turn down the bed…**".
+- **Blacklist to weed out:** meaningless modifiers *very, nice, great, wonderful*; generic nouns *food, drink, outfit, smile*; replace each with an exact particular (`assets/power-words.json` → `generic_blacklist`).
+
+## Anti-sameness: vary the signature
+
+Pattison's universal dial is **stable vs unstable** — decide it per section, then align every element:
+
+- **Number of lines:** even = resolved; **odd = longing/forward lean** (making a chorus even can kill its momentum).
+- **Rhyme type/scheme:** ABAB stable; ABBA unstable; perfect/family stable vs assonance unstable.
+- **Line length:** shorten or lengthen a section's last line to destabilize.
+- **Phrase placement:** start phrases after the downbeat (anticipation) for instability, on it for stability.
+- **POV:** rotating among the four POVs makes a set "breathe" instead of feeling static.
+- **Form:** choose from the story's motion (AAA vs verse/chorus vs AABA), not habit — Davis notes a chorus "would have ruined" Joni Mitchell's "Marcie", which needed AAA.
+- **Across songs (diagnose defaults):** audit your catalog for the shared thread; study music unlike yours; **write in a different key**; **write on a different instrument** (its physical limits reshape melody — R.E.M.'s "Losing My Religion" began on mandolin); **change the writing order** (lyric-first). More *varied* listening shrinks accidental self-plagiarism.
+
+See `references/60-knowledge-and-retrieval.md` for the per-output variation discipline and ledger.
 
 ## Common pitfalls (with fixes)
 
@@ -187,6 +249,14 @@ Line-length check
 - Use bracket tags ([Verse], [Chorus], [Bridge]) and keep your written scheme intact inside each; see `11-suno-prompting.md` for tag syntax and `13-vocal-control.md` for delivery control.
 - Machine-check before you ship: `python3 scripts/lyric_lint.py <lyric-file>` prints the per-section rhyme scheme, near-rhymes (assonance), repeated lines, line-length spread, and hits against a built-in cliché list. It is an orthographic approximation (no pronunciation dictionary) — an aid for the eye, not a verdict.
 
+## Good vs competent-but-lifeless
+
+- **Identifiable, singular idea.** A theme is a specific angle ("the cost of a dream that came true"), not a topic ("love").
+- **Evokes, doesn't name** (the objective-correlative rule above). "A gifted lyricist doesn't declare the feeling, but evokes it."
+- **Specific enough to become the listener's memory.** Specific lines "stimulate my sense memories… I am in the song"; generic lines leave you an observer.
+- **No secondhand emotion.** Lyrics written to an imagined market's taste "lack real feeling… they're synthetic" (Davis).
+- **Generated freely, then rewritten hard.** Kill the inner editor while generating; "rewriting is the gold standard" (Pattison); "90% of what we write won't be our best 10%" (Stolpe). Lifelessness usually comes from organising while generating.
+
 ## Sources
 
 - https://www.musesmuse.com/patart2.html
@@ -209,3 +279,17 @@ Line-length check
 - https://www.billboard.com/media/lists/greatest-song-bridges-21st-century-top-100-9571438/
 - https://americansongwriter.com/the-point-of-point-of-view-developing-your-ideas-part-ii/
 - https://www.patpattison.com/language-and-songwriting
+- https://www.patpattison.com/pat-s-lyric-tips
+- https://www.soundonsound.com/techniques/pat-pattison-writing-better-lyrics
+- https://www.songwriting.net/blog/size-matters-a-study-in-prosody
+- https://online.berklee.edu/takenote/prosody-in-music-and-songwriting/
+- https://online.berklee.edu/takenote/songwriting-tips-try-destination-writing/
+- https://online.berklee.edu/takenote/common-lyric-writing-roadblocks-and-ways-to-overcome-them/
+- https://www.andreastolpe.com/articles/getting-started-with-sensory-writing
+- https://www.andreastolpe.com/articles/improve-your-songs-with-sensory-writing
+- https://guitarcompendium.com/pdfs/sheila_davis_the_craft_of_lyric_writing.pdf
+- https://orphiq.com/resources/how-to-write-a-hook
+- https://thesongfoundry.com/prosody-songwriting-101/
+- https://www.swissarmymusician.com/how-to-stop-writing-same-sounding-songs/
+- https://www.secretsofsongwriting.com/2016/02/25/when-your-song-sounds-too-much-like-another-one/
+- https://edurev.in/t/507417/music-fundamentals-developing-unique-theme-2

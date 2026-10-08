@@ -66,6 +66,7 @@ matches the task; do not read them all at once.
 | `assets/imagery-lexicon.json` | Index of the offline imagery bank (theme → file). Read one theme, not all. |
 | `assets/imagery/<theme>.json` | Concrete sensory material for one theme (16 themes: rain, night, city, home, leaving-farewell, first-love, heartbreak, wedding, childhood, road-journey, sea-coast, winter, summer, morning, drinking-bar, work). |
 | `assets/plausibility-checks.md` | Pre-ship reality audit: seasons/hemisphere, light/era, geography, units, body physics, timeline/POV, cultural etiquette. |
+| `assets/power-words.json` | Concrete replacements for generic language: power verbs, sensory adjectives, polysensate words, generic + dead-metaphor blacklists, cliché rhyme pairs. |
 | `scripts/format_style_prompt.py` | Assemble a Suno style + exclude prompt from flags. |
 | `scripts/syllable_meter.py` | Count syllables per line; check against a target meter. |
 | `scripts/lyric_lint.py` | Approximate rhyme scheme, near-rhyme, repetition, line-spread, and cliché lint. |

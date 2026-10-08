@@ -57,6 +57,7 @@ assets/                  templates, presets, registries, offline data
   imagery-lexicon.json   index of the offline imagery bank (read one theme)
   imagery/<theme>.json   16 themes of concrete sensory material
   plausibility-checks.md pre-ship reality audit
+  power-words.json       concrete swaps for generic/clichéd language
   persona-presets.json   genre/persona presets
   song-template.md       output template
   freshness.json         what to re-verify and when

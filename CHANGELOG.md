@@ -12,7 +12,8 @@ See `references/50-self-update.md` for the full update protocol.
 
 - **Touched:** `references/60-knowledge-and-retrieval.md` (new),
   `assets/imagery-lexicon.json` (new index), `assets/imagery/*.json` (16 new theme
-  files), `assets/plausibility-checks.md` (new), `references/00-index.md`,
+  files), `assets/plausibility-checks.md` (new), `assets/power-words.json` (new),
+  `references/04-lyric-craft.md` (evidence-enriched), `references/00-index.md`,
   `SKILL.md`, `assets/freshness.json`, `evals/evals.json`, `README.md`,
   `install.sh`, `.gitignore` (packaging)
 - **Facts changed:** none about Suno — this is offline knowledge + packaging.

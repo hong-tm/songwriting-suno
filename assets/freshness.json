@@ -245,6 +245,15 @@
       "last_verified": "2026-10-07",
       "sources": [],
       "notes": "Pre-ship reality audit for lyric content"
+    },
+    "assets/power-words.json": {
+      "volatility": "low",
+      "last_verified": "2026-10-07",
+      "sources": [
+        "https://online.berklee.edu/takenote/songwriting-tips-try-destination-writing/",
+        "https://guitarcompendium.com/pdfs/sheila_davis_the_craft_of_lyric_writing.pdf"
+      ],
+      "notes": "Power verbs, sensory adjectives, polysensate words, generic + dead-metaphor blacklists"
     }
   }
 }

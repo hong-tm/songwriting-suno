@@ -16,6 +16,7 @@ Default to what is already here. It is instant and free:
 | `assets/imagery-lexicon.json` | **Index** of the imagery bank — theme → file | ~250 tok |
 | `assets/imagery/<theme>.json` | Concrete sensory material for **one** theme (rain, night, city, home, leaving-farewell, first-love, heartbreak, wedding, childhood, road-journey, sea-coast, winter, summer, morning, drinking-bar, work) | ~600 tok |
 | `assets/plausibility-checks.md` | Pre-ship reality audit (seasons, light, geography, era, culture, POV) | ~2k tok |
+| `assets/power-words.json` | Concrete swaps for generic/clichéd language (power verbs, sensory words, blacklists) | ~1k tok |
 | `assets/persona-presets.json` | Genre/persona starting points | small |
 | `references/04`, `06` | Object writing, show-don't-tell, subtext | on demand |
 
