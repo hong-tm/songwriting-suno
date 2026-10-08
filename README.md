@@ -8,9 +8,26 @@ Plain files — no build step. Clone it into an agent skills directory and it wo
 
 ## Install
 
+**One command (recommended)** — via the [`skills`](https://github.com/vercel-labs/skills)
+CLI (`npx skills add`):
+
 ```bash
-# recommended: clone into the auto-loaded external skills dir
-git clone <REPO_URL> ~/.agents/skills/songwriting-suno
+npx skills add lewyk510/songwriting-suno
+```
+
+It discovers this skill and installs it into your agent's skills directory
+(`.agents/skills/songwriting-suno` for opencode / codex / cursor,
+`.claude/skills/songwriting-suno` for Claude Code). No extra setup.
+
+```bash
+npx skills add lewyk510/songwriting-suno -a claude-code -a opencode   # pick agents
+npx skills add lewyk510/songwriting-suno -g                           # install globally
+```
+
+**Manual** — clone or copy it in:
+
+```bash
+git clone https://github.com/lewyk510/songwriting-suno ~/.agents/skills/songwriting-suno
 
 # or, from an existing checkout:
 ./install.sh            # copies into ~/.agents/skills/songwriting-suno
@@ -95,4 +112,4 @@ touch your learning history. No secrets or credentials are stored here.
 ## Notes
 
 - Facts about Suno change; `scripts/check_freshness.py` tracks staleness.
-- License: TBD by the repository owner.
+- License: MIT (see `LICENSE`).
