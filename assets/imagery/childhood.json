@@ -1,0 +1,177 @@
+{
+ "_theme": "childhood",
+ "en": {
+  "sight": [
+   "gravel driveway",
+   "spinning bike wheels",
+   "candy jar",
+   "schoolbag by the door",
+   "crayon on the wall",
+   "kite on the roof"
+  ],
+  "sound": [
+   "bell at recess",
+   "skipping rope slap",
+   "cartoon theme",
+   "garden hose spray",
+   "sneaker scuff",
+   "door slam"
+  ],
+  "touch": [
+   "chalk dust",
+   "warm sidewalk",
+   "pocket marbles",
+   "stubbed toe",
+   "wet swim trunks",
+   "fuzzy blanket"
+  ],
+  "smell": [
+   "new eraser",
+   "old library paper",
+   "fresh paint",
+   "dew-heavy grass",
+   "baker's window",
+   "worn sandals"
+  ],
+  "taste": [
+   "ice pop",
+   "grape flavor",
+   "bubble gum",
+   "cool well water",
+   "sugar cubes",
+   "sour apple"
+  ],
+  "objects": [
+   "marbles",
+   "kite",
+   "comic book",
+   "tree swing",
+   "lunchbox",
+   "under-the-bed den"
+  ],
+  "verbs": [
+   "spin",
+   "chase",
+   "hide",
+   "swing",
+   "giggle",
+   "catch"
+  ]
+ },
+ "zh": {
+  "sight": [
+   "碎石路",
+   "转动的车圈",
+   "糖罐",
+   "门边的书包",
+   "墙上的蜡笔画",
+   "房顶的风筝"
+  ],
+  "sound": [
+   "下课铃",
+   "跳绳落地",
+   "动画主题曲",
+   "水管浇花",
+   "拖着布鞋",
+   "门砰一声"
+  ],
+  "touch": [
+   "粉笔灰",
+   "晒热的地砖",
+   "兜里的弹珠",
+   "踢到的脚趾",
+   "湿泳裤",
+   "绒毯子"
+  ],
+  "smell": [
+   "新橡皮",
+   "书页味",
+   "新刷的墙",
+   "带露的草",
+   "面包店",
+   "旧凉鞋"
+  ],
+  "taste": [
+   "冰棍",
+   "葡萄味",
+   "泡泡糖",
+   "凉的井水",
+   "方糖",
+   "酸苹果"
+  ],
+  "objects": [
+   "弹珠",
+   "风筝",
+   "连环画",
+   "树下的秋千",
+   "饭盒",
+   "床底下的小窝"
+  ],
+  "verbs": [
+   "转",
+   "追",
+   "藏",
+   "荡",
+   "咯咯笑",
+   "接住"
+  ]
+ },
+ "ms": {
+  "sight": [
+   "jalan kerikil",
+   "roda berputar",
+   "bekas gula-gula",
+   "beg di tepi pintu",
+   "kapur di dinding",
+   "layang-layang di atas atap"
+  ],
+  "sound": [
+   "bel rehat",
+   "lompat tali",
+   "kartun menyala",
+   "hos menyembur",
+   "derit kasut",
+   "pintu zink"
+  ],
+  "touch": [
+   "debu kapur",
+   "simen panas",
+   "guli di poket",
+   "jari kaki membantut",
+   "seluar basah",
+   "selimut halus"
+  ],
+  "smell": [
+   "getah baru",
+   "buku lama",
+   "cat",
+   "rumput berembun",
+   "kedai roti",
+   "kasut lama"
+  ],
+  "taste": [
+   "ais loli",
+   "perisa anggur",
+   "gula-gula getah",
+   "air perigi",
+   "gula batu",
+   "epal masam"
+  ],
+  "objects": [
+   "guli",
+   "layang-layang",
+   "buku komik",
+   "ayun berputik",
+   "bekas makan",
+   "bawah katil"
+  ],
+  "verbs": [
+   "kejar",
+   "sorok",
+   "berayun",
+   "tarik",
+   "ketawa",
+   "menangkap"
+  ]
+ }
+}

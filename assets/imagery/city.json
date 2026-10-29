@@ -1,0 +1,177 @@
+{
+ "_theme": "city",
+ "en": {
+  "sight": [
+   "crosswalk light",
+   "glass towers",
+   "bus exhaust",
+   "shop window",
+   "fire escape",
+   "cracked sidewalk"
+  ],
+  "sound": [
+   "subway rumble",
+   "jackhammer",
+   "brake squeal",
+   "club bass",
+   "crossing beep",
+   "vendor bell"
+  ],
+  "touch": [
+   "crowded elbow",
+   "hot grille air",
+   "cold bench slats",
+   "turnstile bar",
+   "greasy railing",
+   "trembling pavement"
+  ],
+  "smell": [
+   "roasted nut cart",
+   "subway dust",
+   "exhaust fume",
+   "torn garbage bag",
+   "rain-washed air",
+   "bakery vent"
+  ],
+  "taste": [
+   "burnt coffee",
+   "hot pretzel salt",
+   "vending cola",
+   "dusty air",
+   "wallet leather",
+   "iron tap water"
+  ],
+  "objects": [
+   "turnstile",
+   "parking meter",
+   "elevator",
+   "billboard",
+   "hydrant",
+   "bus card"
+  ],
+  "verbs": [
+   "swarm",
+   "honk",
+   "squeal",
+   "jostle",
+   "crawl",
+   "spark"
+  ]
+ },
+ "zh": {
+  "sight": [
+   "红绿灯",
+   "玻璃高楼",
+   "公交车尾气",
+   "橱窗",
+   "防火梯",
+   "裂缝人行道"
+  ],
+  "sound": [
+   "地铁轰隆",
+   "打桩机",
+   "刹车尖叫",
+   "夜店低音",
+   "过街提示音",
+   "小贩铃"
+  ],
+  "touch": [
+   "人潮的胳膊",
+   "烫的井盖",
+   "冰凉长椅",
+   "闸机杆",
+   "油腻的扶手",
+   "地面震动"
+  ],
+  "smell": [
+   "糖炒栗子",
+   "地铁粉尘",
+   "尾气",
+   "垃圾袋",
+   "雨后的空气",
+   "面包房"
+  ],
+  "taste": [
+   "咖啡焦味",
+   "烤肠的咸",
+   "瓶装汽水",
+   "灰尘",
+   "皮夹子味",
+   "自来水的铁味"
+  ],
+  "objects": [
+   "闸机",
+   "停车咪表",
+   "电梯",
+   "广告牌",
+   "消防栓",
+   "公交卡"
+  ],
+  "verbs": [
+   "涌",
+   "鸣笛",
+   "尖叫",
+   "挤",
+   "爬",
+   "闪"
+  ]
+ },
+ "ms": {
+  "sight": [
+   "lampu isyarat",
+   "menara kaca",
+   "ekzos bas",
+   "tingkap kedai",
+   "tangga kecemasan",
+   "simen retak"
+  ],
+  "sound": [
+   "tren bawah tanah",
+   "mesin bor jalan",
+   "brek berdecit",
+   "bunyi disko",
+   "beep lintasan",
+   "loceng gerobok"
+  ],
+  "touch": [
+   "siku sesak",
+   "angin enjin panas",
+   "bangku dingin",
+   "palang putar",
+   "pagar berminyak",
+   "jalan bergetar"
+  ],
+  "smell": [
+   "kacang panggang",
+   "debu stesen",
+   "ekzos",
+   "sampah tersobek",
+   "hawa selepas hujan",
+   "asap bakeri"
+  ],
+  "taste": [
+   "kopi hangit",
+   "garam bergumpal",
+   "soda tin",
+   "debu jalan",
+   "kulit dompet",
+   "air paip"
+  ],
+  "objects": [
+   "palang putar",
+   "meter parkir",
+   "lift",
+   "papan iklan",
+   "paip kecemasan",
+   "kad bas"
+  ],
+  "verbs": [
+   "sesak",
+   "berbunyi",
+   "berdesing",
+   "berdesak",
+   "merangkak",
+   "memancar"
+  ]
+ }
+}

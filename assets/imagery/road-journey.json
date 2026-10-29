@@ -1,0 +1,176 @@
+{
+ "_theme": "road-journey",
+ "en": {
+  "sight": [
+   "mile marker",
+   "overpass shadow",
+   "flat horizon",
+   "a string of tail lights",
+   "roadside diner",
+   "diesel rig"
+  ],
+  "sound": [
+   "engine hum",
+   "radio scanning",
+   "wind through the window",
+   "gravel pings",
+   "tires on bridge seams",
+   "air brake gasp"
+  ],
+  "touch": [
+   "hot vinyl seat",
+   "arm out the window",
+   "hot cup rim",
+   "numb thigh",
+   "creased map",
+   "steering wheel grain"
+  ],
+  "smell": [
+   "gasoline",
+   "fried food",
+   "hot asphalt",
+   "car air freshener",
+   "cow fields",
+   "cigarette through the vent"
+  ],
+  "taste": [
+   "gas-station coffee",
+   "jerky salt",
+   "warm soda",
+   "dust on the lips",
+   "chewed toothpick",
+   "half-melted candy"
+  ],
+  "objects": [
+   "mile marker",
+   "spare tire",
+   "toll booth",
+   "travel mug",
+   "cassette case",
+   "road atlas"
+  ],
+  "verbs": [
+   "unroll",
+   "burn",
+   "bounce",
+   "pass",
+   "veer",
+   "coast"
+  ]
+ },
+ "zh": {
+  "sight": [
+   "里程碑",
+   "高架桥影",
+   "平到边的地平线",
+   "一串尾灯",
+   "路边饭店",
+   "柴油卡车"
+  ],
+  "sound": [
+   "发动机嗡嗡",
+   "收音机扫台",
+   "窗缝的风",
+   "石子打底盘",
+   "桥缝胎噪",
+   "气刹放气"
+  ],
+  "touch": [
+   "人造革座椅烫",
+   "胳膊伸出窗外",
+   "烫手的杯沿",
+   "坐麻的大腿",
+   "折出痕的地图",
+   "方向盘的纹路"
+  ],
+  "smell": [
+   "汽油",
+   "炸串",
+   "晒热的沥青",
+   "车载香片",
+   "牛场味",
+   "烟从风口进来"
+  ],
+  "taste": [
+   "服务区咖啡",
+   "肉干的咸",
+   "温掉的汽水",
+   "灰在嘴唇上",
+   "咬过的牙签",
+   "化了又硬的糖"
+  ],
+  "objects": [
+   "里程碑",
+   "备胎",
+   "收费站",
+   "保温杯",
+   "磁带盒",
+   "公路地图"
+  ],
+  "verbs": [
+   "铺开",
+   "烧",
+   "颠",
+   "超车",
+   "打偏",
+   "滑行"
+  ]
+ },
+ "ms": {
+  "sight": [
+   "tanda batu",
+   "bayang jambatan",
+   "ufuk rata",
+   "lampu belakang berbaris",
+   "kedai tepi jalan",
+   "kereta lori"
+  ],
+  "sound": [
+   "enjin berdengung",
+   "radio mengimbas",
+   "angin di tingkap",
+   "kerikil menghentak",
+   "tayar di sambungan",
+   "brek udara"
+  ],
+  "touch": [
+   "kerusi vinyl panas",
+   "tangan luar tingkap",
+   "tepi cawan panas",
+   "pinggul kebas",
+   "peta berkedut",
+   "genting stering"
+  ],
+  "smell": [
+   "petrol",
+   "goreng",
+   "aspal panas",
+   "penyegar udara",
+   "kandang lembu",
+   "asap di ventilator"
+  ],
+  "taste": [
+   "kopi stesen",
+   "garam keropok",
+   "soda hangat",
+   "debu di bibir",
+   "kerikil di bibir",
+   "gula melekap"
+  ],
+  "objects": [
+   "tanda batu",
+   "tayar ganti",
+   "plaza tol",
+   "mug kembara",
+   "bekas kaset",
+   "peta jalan"
+  ],
+  "verbs": [
+   "memecut",
+   "melambung",
+   "memandu",
+   "berhenti",
+   "berpaling"
+  ]
+ }
+}

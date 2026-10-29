@@ -1,0 +1,124 @@
+{
+ "_theme": "drinking-bar",
+ "en": {
+  "sight": [
+   "neon in the mirror",
+   "tall beer can",
+   "bar-top residue",
+   "jukebox glow",
+   "empty stools",
+   "ashtray of coins"
+  ],
+  "sound": [
+   "glass clink",
+   "loud tap sputter",
+   "three-coin jukebox",
+   "last-call shout",
+   "pub door in-out",
+   "bottle rolling"
+  ],
+  "touch": [
+   "sticky foam",
+   "cold bottle",
+   "counter pressing the lip",
+   "felt coaster",
+   "chrome footrail",
+   "leather seat"
+  ],
+  "smell": [
+   "warm beer",
+   "burnt fryer grease",
+   "floor bleach",
+   "spilled gin",
+   "leather stool",
+   "cigarette haze"
+  ],
+  "taste": [
+   "hop bitterness",
+   "charred whiskey",
+   "flat fizz",
+   "beer foam",
+   "spicy snack",
+   "salted glass rim"
+  ],
+  "objects": [
+   "coaster",
+   "tap handle",
+   "chalkboard",
+   "tip jar",
+   "bar stool",
+   "mirror"
+  ],
+  "verbs": [
+   "slam",
+   "pour",
+   "close",
+   "forget"
+  ]
+ },
+ "zh": {
+  "sight": [
+   "镜子里的霓虹",
+   "高罐啤酒",
+   "吧台的黏渍",
+   "点唱机亮灯",
+   "空吧凳",
+   "烟灰缸里的硬币"
+  ],
+  "sound": [
+   "酒杯碰",
+   "打酒器响",
+   "点唱机的歌",
+   "老板喊最后单",
+   "门开了又关",
+   "瓶子滚"
+  ],
+  "touch": [
+   "粘手的泡沫",
+   "凉的瓶子",
+   "抵着台面的手肘",
+   "绒面杯垫",
+   "脚下的铜横杠",
+   "皮凳面"
+  ],
+  "smell": [
+   "温啤酒",
+   "油炸味",
+   "地板消毒水",
+   "洒出来的酒",
+   "皮革味",
+   "烟味"
+  ],
+  "taste": [
+   "酒花苦",
+   "焦的威士忌",
+   "跑了的气",
+   "啤酒泡沫",
+   "麻辣小食",
+   "加了盐的杯口"
+  ],
+  "objects": [
+   "杯垫",
+   "酒龙头",
+   "小黑板",
+   "小费罐",
+   "吧凳",
+   "镜子"
+  ],
+  "verbs": [
+   "干杯",
+   "斟",
+   "打烊",
+   "断片"
+  ]
+ },
+ "ms": {
+  "sight": [],
+  "sound": [],
+  "touch": [],
+  "smell": [],
+  "taste": [],
+  "objects": [],
+  "verbs": []
+ }
+}

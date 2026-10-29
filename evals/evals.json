@@ -1,0 +1,222 @@
+{
+  "_note": "Behavioral eval cases for the songwriting-suno skill. Prompts are realistic user asks; expected_behavior describes what the agent should DO with the skill's scripts/assets; success_criteria are checkable outcomes. Illustrative only — no official Suno behavior is claimed.",
+  "evals": [
+    {
+      "id": "citypop-bilingual-leaving-home",
+      "prompt": "write me a sad city-pop song about leaving home in Chinese and English",
+      "expected_behavior": "Start from the city-pop preset in assets/persona-presets.json, shift mood to melancholic, build the style prompt with scripts/format_style_prompt.py, draft bilingual lyrics (Chinese verses, English chorus or mixed lines) in assets/song-template.md structure, meter-check lines with scripts/syllable_meter.py (CJK chars = 1 unit), and pass scripts/validate_structure.py.",
+      "success_criteria": [
+        "Style prompt is a single comma-separated string of <=200 chars with an EXCLUDE line",
+        "Lyric sheet contains at least one [Chorus] and no empty non-instrumental sections",
+        "validate_structure.py exits 0 on the final lyrics",
+        "Both Chinese and English lines appear in the lyrics and each Chinese character is metered as 1 unit",
+        "Title, concept, vocal direction, and meaning & subtext sections are filled in the template"
+      ]
+    },
+    {
+      "id": "wedding-acoustic-ballad",
+      "prompt": "an acoustic ballad for my sister's wedding, from the family's point of view, around 72 BPM",
+      "expected_behavior": "Use the acoustic-ballad preset as base, assemble the prompt with format_style_prompt.py (tempo 72), write 4-line verses and a short singable chorus, verify chorus lines are 6-8 syllables via syllable_meter.py --expect, and validate structure.",
+      "success_criteria": [
+        "Style prompt includes acoustic ballad descriptors and 72 BPM, <=200 chars",
+        "EXCLUDE line rules out electronic drums / autotune",
+        "Chorus lines each meter to 6-8 syllables (syllable_meter.py output shown)",
+        "validate_structure.py exits 0; verse and chorus counts differ by at most 1",
+        "Lyrics avoid overly private in-jokes unless the user supplied them"
+      ]
+    },
+    {
+      "id": "trap-motivation-tight-meter",
+      "prompt": "dark trap motivation anthem, 140 BPM, hook that hits hard, verses should feel relentless",
+      "expected_behavior": "Use the trap preset, assemble the style prompt, write verses in tight 8-syllable lines and a punchy repeated hook, demonstrate meter agreement with syllable_meter.py --expect 8,8,8,8 on verse 1, and run validate_structure.py (exit 0).",
+      "success_criteria": [
+        "Style prompt contains trap descriptors with 140 BPM noted",
+        "Verse 1 lines match the declared expected meter (PASS on all lines)",
+        "Hook is <=2 distinct lines and repeats at least twice in the sheet",
+        "validate_structure.py exits 0",
+        "Iteration log in the template records at least one meter-driven revision"
+      ]
+    },
+    {
+      "id": "lofi-study-instrumental",
+      "prompt": "lo-fi track for studying, no vocals really, maybe a murmured phrase, 20-minute vibe in 2 minutes",
+      "expected_behavior": "Use the lo-fi preset, set vocal to instrumental/soft murmured, mark non-sung parts with [Instrumental Break]-style tags, assemble prompt with format_style_prompt.py, and validate that instrumental sections are allowed to be line-free while sung sections are not.",
+      "success_criteria": [
+        "At least one section tagged [Instrumental ...] exists and passes the empty-section rule",
+        "Any sung section has lyric lines; validate_structure.py exits 0",
+        "Style prompt is <=200 chars with lo-fi descriptors and no loud-vocal tags",
+        "Estimated length from validate_structure.py (~3.5s/line) is reported to the user",
+        "Vocal direction section explains the murmured-phrase treatment"
+      ]
+    },
+    {
+      "id": "kpop-girlgroup-debut",
+      "prompt": "debut track for a 4-member girl group, k-pop, needs a dance break and a chant chorus, bilingual hooks",
+      "expected_behavior": "Use the k-pop preset, build the style prompt with format_style_prompt.py, structure the sheet with [Pre-Chorus]/[Chorus]/[Rap Verse]/[Instrumental Break (dance break)] sections, keep verse:chorus balance within 1, and validate; note that member-line distribution is production guidance, not something the tool enforces.",
+      "success_criteria": [
+        "Structure includes a tagged dance break section and at least one [Chorus]",
+        "validate_structure.py exits 0 with no more than a 1-section verse/chorus gap",
+        "Chant chorus uses short repeatable phrases (<=6 syllables per chant line)",
+        "Both languages appear in hooks; CJK lines metered per character if used",
+        "Style prompt <=200 chars and EXCLUDE line present"
+      ]
+    },
+    {
+      "id": "learn-route-teach-me",
+      "prompt": "teach me how to write better choruses",
+      "expected_behavior": "Route to LEARN mode and references/40-learn-with-me.md: use EXPLAIN/SOCRATIC per turn (one concept, one example, then a check), withhold the full answer unless asked, and load or create the learner profile at ~/.agents/learner-profiles/songwriting-suno.md (from assets/learner-profile.md).",
+      "success_criteria": [
+        "LEARN mode is selected (not BUILD); 40-learn-with-me.md is read",
+        "At most one instructional move/question per turn; no full solution dumped unprompted",
+        "A concrete example plus a comprehension check is given",
+        "Learner profile is loaded or created from assets/learner-profile.md at the documented external path"
+      ]
+    },
+    {
+      "id": "learn-cowrite-critique",
+      "prompt": "let's write a chorus together line by line, then tell me what you think of mine",
+      "expected_behavior": "CO-WRITE then CRITIQUE in references/40-learn-with-me.md: keep authorship with the user (they draft, agent suggests), give Praise-Question-Wish with strengths before fixes and one fix at a time, use scripts/syllable_meter.py for objective meter feedback, then append one line to the learner profile's session log.",
+      "success_criteria": [
+        "User's own lines are preserved; agent suggests rather than replaces",
+        "Feedback follows Praise-Question-Wish with strengths first and a single top fix",
+        "syllable_meter.py is used to make at least one meter observation",
+        "Learner profile session log gains exactly one entry (capped at 20)"
+      ]
+    },
+    {
+      "id": "learn-assess-level",
+      "prompt": "assess my songwriting level",
+      "expected_behavior": "Run the ASSESS sub-mode in references/40-learn-with-me.md: a short (~5-prompt) placement that yields a beginner/intermediate/advanced level per sub-skill (lyric-craft, suno-tooling, music-theory-lite) with the evidence that justified it, written into the learner profile.",
+      "success_criteria": [
+        "ASSESS mode used; the 3x3 rubric from 40-learn-with-me.md is applied",
+        "Level is written per sub-skill with explicit evidence, not a bare score",
+        "Result is persisted to ~/.agents/learner-profiles/songwriting-suno.md (merged, not appended as a duplicate)",
+        "A next-step exercise is offered based on the assessed level"
+      ]
+    },
+    {
+      "id": "update-route-refresh",
+      "prompt": "the Suno docs changed - update the skill",
+      "expected_behavior": "Route to UPDATE mode and references/50-self-update.md: run scripts/check_freshness.py, identify stale entries, re-verify them against their registry sources, patch only the changed fact sections, bump last_verified in assets/freshness.json, and append a CHANGELOG.md entry.",
+      "success_criteria": [
+        "UPDATE mode selected; 50-self-update.md is read",
+        "check_freshness.py is run and its output reported",
+        "Only fact sections are rewritten; craft prose is preserved",
+        "assets/freshness.json last_verified is bumped and a CHANGELOG.md entry is added",
+        "A file-by-file diff of what changed is reported to the user"
+      ]
+    },
+    {
+      "id": "freshness-exit-codes",
+      "prompt": "check the skill freshness",
+      "expected_behavior": "Run python3 scripts/check_freshness.py and behave per its exit code: 0 (all fresh) report one line with the oldest last_verified; 1 (stale or unregistered) list the STALE rows and offer a refresh; 2 (registry problem) report the error without rewriting anything.",
+      "success_criteria": [
+        "Script is run and its exit code is honored",
+        "On exit 1, the stale/unregistered items are named and a refresh is offered",
+        "On exit 2, no files are modified and the registry error is surfaced",
+        "On exit 0, a single summary line with the oldest verification date is given"
+      ]
+    },
+    {
+      "id": "build-default-unaffected",
+      "prompt": "write a sad city-pop song about a rainy train station",
+      "expected_behavior": "Stay in BUILD mode (the three-mode routing in SKILL.md must not leak LEARN or UPDATE into a plain deliverable request); produce the song via the BUILD workflow with assets/song-template.md.",
+      "success_criteria": [
+        "BUILD mode is used (not LEARN/UPDATE)",
+        "The BUILD workflow (structure -> prompt -> lyrics -> validate) is followed",
+        "assets/song-template.md is used for output",
+        "No learner-profile writes occur"
+      ]
+    },
+    {
+      "id": "lyric-lint-objective-feedback",
+      "prompt": "my chorus keeps getting called cheesy but I don't know why - check it",
+      "expected_behavior": "Run scripts/lyric_lint.py on the lyric sheet: report the per-section rhyme scheme, near-rhymes, repeated lines, line-length spread, and any built-in cliche hits. Treat the output as an aid, not a verdict, and pair it with intent-first feedback.",
+      "success_criteria": [
+        "lyric_lint.py is run and its output reported (scheme + repeats + cliche hits)",
+        "The cliche scan is used (not --no-cliche) and hits are named by line",
+        "The tool is described as approximate, not authoritative",
+        "At least one concrete fix is proposed for the top finding"
+      ]
+    },
+    {
+      "id": "selftest-after-update",
+      "prompt": "did refreshing the Suno facts break anything in the skill?",
+      "expected_behavior": "Run scripts/selftest.py (one command). Report the PASS/FAIL summary and, on failure, the failing check names with their captured detail. Do not modify files to make it pass without fixing the root cause.",
+      "success_criteria": [
+        "selftest.py is run and its summary line is reported",
+        "Exit code is honored (0 = all good, 1 = a check failed)",
+        "On failure, failing checks are named with evidence, not auto-edited away",
+        "check_freshness.py --check-coverage is understood to be part of the suite"
+      ]
+    },
+    {
+      "id": "worked-example-as-model",
+      "prompt": "write an acoustic ballad for a wedding, family point of view, slow",
+      "expected_behavior": "Follow the shape of references/07-worked-examples.md Example 1: tight genre-first Style prompt via format_style_prompt.py, BPM/key, structure plan, full tagged sheet, a real syllable_meter.py check, a validate_structure.py PASS, one logged iteration, and a meaning/subtext paragraph.",
+      "success_criteria": [
+        "Style prompt is one comma-separated string <=200 chars with an EXCLUDE line",
+        "syllable_meter.py output is shown and validate_structure.py exits 0",
+        "The sheet uses assets/song-template.md section order",
+        "An iteration log with at least one entry is present",
+        "Both a literal and a subtext reading are written"
+      ]
+    },
+    {
+      "id": "offline-vs-online-retrieval",
+      "prompt": "write a song about my hometown in Kelantan in the rain, in Malay",
+      "expected_behavior": "Use the OFFLINE knowledge first: pull concrete detail from ONE theme in assets/imagery/ (rain or leaving-farewell), and run the plausibility audit (assets/plausibility-checks.md) for tropical/hemisphere and Malay-cultural fit. Go online ONLY if a real local fact (a place, an event) is load-bearing; then cite it. Do not invent local detail.",
+      "success_criteria": [
+        "Reads the imagery index and then a single theme, not the whole bank",
+        "Applies the tropical/hemisphere and Malay-cultural plausibility checks",
+        "Does not fabricate specific local facts; searches only if load-bearing, and cites",
+        "Preference for universal/local-safe imagery is explained"
+      ]
+    },
+    {
+      "id": "anti-sameness-variation",
+      "prompt": "write me another song (this is the fourth one today)",
+      "expected_behavior": "Read references/60-knowledge-and-retrieval.md and deliberately vary at least three axes from recent work (structure, rhyme scheme, POV/tense, image theme, tempo, hook position, line-length profile); update the variation ledger instead of reusing the same scaffold.",
+      "success_criteria": [
+        "At least three axes differ from the previous song",
+        "A different imagery theme is used (not the one just used)",
+        "The variation ledger is consulted/updated",
+        "The result is not a reskin of the previous song"
+      ]
+    },
+    {
+      "id": "plausibility-gate",
+      "prompt": "my song says she drives north and watches the December sunset over the sea",
+      "expected_behavior": "Flag the plausibility issues using assets/plausibility-checks.md: December/sunset direction, and any bearing vs. coastline contradiction; propose a concrete fix (name a west-facing coast, change the month, or drop the load-bearing detail).",
+      "success_criteria": [
+        "Identifies the sunset-direction/hemisphere issue",
+        "Proposes a concrete, testable fix",
+        "Prefers cutting or generalizing an unverified load-bearing detail",
+        "Cites assets/plausibility-checks.md as the gate"
+      ]
+    },
+    {
+      "id": "craft-gate-before-writing",
+      "prompt": "write me a song about my ex, something sad but not too soppy",
+      "expected_behavior": "Before drafting, run the five-question pre-writing gate in references/70-craft-gate-and-spec.md (lyric kind, the one thing, addressee, moment, anchor) and the stranger test; offer the LYR-SPEC spec sheet since the user may iterate. Do not start writing verses before the gate is answered.",
+      "success_criteria": [
+        "references/70-craft-gate-and-spec.md is read; the gate is answered (or recorded as deliberate unknowns) before lyric lines are drafted",
+        "The five fields are each addressed (kind, one-thing, addressee, moment, anchor)",
+        "Default is NOT narrative unless the ask implies it",
+        "The stranger test is applied or explicitly offered",
+        "The spec sheet is offered as an optional deliverable"
+      ]
+    },
+    {
+      "id": "companion-library-routing",
+      "prompt": "do a professional arrangement breakdown and a tone-melody audit for my Mandarin ballad",
+      "expected_behavior": "Route to the companion libraries per references/70-craft-gate-and-spec.md §5: use the active skills (e.g. mc-arrangement-arch and mc-workflow for ARR-SPEC; lw-mandarin and lw-tone-check for the tone-melody audit). Do not reinvent their craft; for parked skills, read them by path from ~/.agents/skills-library/. Keep this bundle for the Suno compile/verify tail.",
+      "success_criteria": [
+        "The active vs parked distinction is respected (12 active, 35 parked)",
+        "Relevant active companion skills are used rather than reimplemented here",
+        "Any parked skill is read by path from ~/.agents/skills-library/",
+        "mc-render-compile / the Suno compile tail is used for the final prompt"
+      ]
+    }
+  ]
+}

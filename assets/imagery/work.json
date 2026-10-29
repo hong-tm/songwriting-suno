@@ -1,0 +1,173 @@
+{
+ "_theme": "work",
+ "en": {
+  "sight": [
+   "conveyor",
+   "time clock",
+   "paper stack",
+   "boiler gauge",
+   "break-room window",
+   "warehouse gate"
+  ],
+  "sound": [
+   "motor hum",
+   "co-worker pager",
+   "forklift reverse beep",
+   "tool clatter",
+   "phone ring",
+   "radio edits"
+  ],
+  "touch": [
+   "sharp tape edge",
+   "hammer grip",
+   "paper cut",
+   "stamp press",
+   "label peel",
+   "cold spanner"
+  ],
+  "smell": [
+   "toner warmth",
+   "machine oil",
+   "floor wax",
+   "file-drawer metal",
+   "office coffee",
+   "burnt popcorn"
+  ],
+  "taste": [
+   "overtime-cooled coffee",
+   "desk-day bread",
+   "soft paper edge",
+   "one quick bite",
+   "gasoline ink",
+   "chip crumbs"
+  ],
+  "objects": [
+   "time clock",
+   "id badge",
+   "standing desk",
+   "shipping pallet",
+   "steel shelving",
+   "fire extinguisher"
+  ],
+  "verbs": [
+   "grind",
+   "stack",
+   "check off",
+   "hold on"
+  ]
+ },
+ "zh": {
+  "sight": [
+   "传送带",
+   "打卡机",
+   "摞起来的报表",
+   "锅炉压力表",
+   "更衣室通风口",
+   "仓库大门"
+  ],
+  "sound": [
+   "马达嗡嗡",
+   "同事的呼叫器",
+   "叉车倒车提示",
+   "工具磕碰",
+   "电话铃",
+   "铁和铁相碰"
+  ],
+  "touch": [
+   "胶带撕口",
+   "锤子手柄",
+   "纸边割手",
+   "盖章的手感",
+   "标签撕角",
+   "冰的扳手"
+  ],
+  "smell": [
+   "复印机热墨",
+   "机油",
+   "地板蜡",
+   "铁皮文件柜",
+   "办公室咖啡",
+   "烧焦的爆米花"
+  ],
+  "taste": [
+   "凉掉的咖啡",
+   "加班啃的面包",
+   "软的纸边",
+   "匆匆一口",
+   "带油味的墨",
+   "薯片渣"
+  ],
+  "objects": [
+   "打卡机",
+   "工牌",
+   "流水线",
+   "托盘",
+   "铁架子",
+   "灭火器"
+  ],
+  "verbs": [
+   "拧",
+   "码",
+   "按下",
+   "熬"
+  ]
+ },
+ "ms": {
+  "sight": [
+   "berkas kertas",
+   "rak besi",
+   "kotak gudang",
+   "mesin cetak",
+   "lampu pejabat",
+   "tanda arah"
+  ],
+  "sound": [
+   "telefon dering",
+   "lift berbunyi",
+   "mesin berdesing",
+   "alat berketuk",
+   "kerusi berderit",
+   "kipas meja"
+  ],
+  "touch": [
+   "getah pelekat",
+   "pegangan tukul",
+   "kertas melukut jari",
+   "cop di tangan",
+   "alat sejuk",
+   "pergelangan besi"
+  ],
+  "smell": [
+   "tinta",
+   "minyak mesin",
+   "lilin lantai",
+   "kopi pejabat",
+   "popcorn hangus",
+   "perabot lama"
+  ],
+  "taste": [
+   "kopi terlalu manis",
+   "air suam",
+   "roti kering",
+   "serpih biskut",
+   "gula batu",
+   "hembus lemak"
+  ],
+  "objects": [
+   "jam kehadiran",
+   "kad pekerja",
+   "meja panjang",
+   "kotak stor",
+   "rak besi",
+   "pemadam kebakaran"
+  ],
+  "verbs": [
+   "menaip",
+   "bertugas",
+   "mengangkut",
+   "bertahan",
+   "mengetuk",
+   "mengemas"
+  ]
+ }
+}

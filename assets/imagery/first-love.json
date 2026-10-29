@@ -1,0 +1,177 @@
+{
+ "_theme": "first-love",
+ "en": {
+  "sight": [
+   "passed note",
+   "shared earbud",
+   "bike back seat",
+   "fogged glasses",
+   "a look away fast",
+   "name on the desk edge"
+  ],
+  "sound": [
+   "laugh behind the hand",
+   "stairwell echo",
+   "bike bell",
+   "phone buzz in class",
+   "heartbeat in the ears",
+   "locker slam"
+  ],
+  "touch": [
+   "finger brush",
+   "warm seat left behind",
+   "letter paper edge",
+   "scabbed knee",
+   "sweaty palm",
+   "collar tug"
+  ],
+  "smell": [
+   "strawberry lip balm",
+   "cut grass",
+   "old book pages",
+   "canteen rolls",
+   "pencil shavings",
+   "sun-warmed hair"
+  ],
+  "taste": [
+   "shared soda",
+   "juice punch",
+   "honeyed pomelo",
+   "watermelon seed",
+   "sugar packet",
+   "buttered popcorn"
+  ],
+  "objects": [
+   "bicycle",
+   "notebook",
+   "mixtape",
+   "school gate",
+   "denim jacket",
+   "bus window"
+  ],
+  "verbs": [
+   "blush",
+   "jot",
+   "cycle",
+   "pass",
+   "doodle",
+   "drop by"
+  ]
+ },
+ "zh": {
+  "sight": [
+   "传的纸条",
+   "分一半的耳机",
+   "车后座",
+   "起雾的眼镜",
+   "低头脸红",
+   "桌角的名字"
+  ],
+  "sound": [
+   "捂嘴的笑",
+   "楼梯间回声",
+   "车铃",
+   "上课的手机震动",
+   "耳朵里的心跳",
+   "铁柜砰"
+  ],
+  "touch": [
+   "指尖碰到",
+   "座位还有余温",
+   "信纸边缘",
+   "结痂的膝盖",
+   "手心出汗",
+   "拉衣角"
+  ],
+  "smell": [
+   "草莓唇膏",
+   "割过的草",
+   "旧书页",
+   "食堂馒头",
+   "铅笔屑",
+   "晒热的头发"
+  ],
+  "taste": [
+   "分一半的汽水",
+   "果汁",
+   "蜂蜜柚子",
+   "西瓜籽",
+   "白糖包",
+   "爆米花"
+  ],
+  "objects": [
+   "自行车",
+   "笔记本",
+   "磁带",
+   "校门口",
+   "牛仔外套",
+   "公交车窗"
+  ],
+  "verbs": [
+   "脸红",
+   "写字",
+   "骑车",
+   "传",
+   "涂鸦",
+   "顺路"
+  ]
+ },
+ "ms": {
+  "sight": [
+   "kertas disorok",
+   "earfon dikongsi",
+   "boncet basikal",
+   "kaca berkabus",
+   "wajah ditunduk",
+   "nama di tepi meja"
+  ],
+  "sound": [
+   "ketawa di belakang tangan",
+   "gema ruang tangga",
+   "bel basikal",
+   "telefon bergetar di kelas",
+   "jantung di telinga",
+   "pintu besi ditutup"
+  ],
+  "touch": [
+   "jari bersentuh",
+   "tempat duduk masih hangat",
+   "tepi kertas surat",
+   "lutut berkerak",
+   "tangan berpeluh",
+   "kolar ditarik"
+  ],
+  "smell": [
+   "balsam bibir strawberi",
+   "rumput dipotong",
+   "halaman buku lama",
+   "bau kantin",
+   "serbuk pensel",
+   "rambut dipanaskan"
+  ],
+  "taste": [
+   "soda berdua",
+   "air jus",
+   "limau madu",
+   "biji tembikai",
+   "sachet gula",
+   "popcorn mentega"
+  ],
+  "objects": [
+   "basikal",
+   "buku tulis",
+   "kaset",
+   "pintu sekolah",
+   "jaket denim",
+   "cermin bas"
+  ],
+  "verbs": [
+   "menoleh",
+   "menulis",
+   "kayuh",
+   "menerus",
+   "mencuci",
+   "berlalu"
+  ]
+ }
+}

@@ -1,0 +1,177 @@
+{
+ "_theme": "wedding",
+ "en": {
+  "sight": [
+   "white confetti",
+   "long gown train",
+   "ring pillow",
+   "flower arch",
+   "guests in rows",
+   "lace veil"
+  ],
+  "sound": [
+   "organ chords",
+   "guest applause",
+   "camera shutter",
+   "champagne pop",
+   "vows read",
+   "heels on marble"
+  ],
+  "touch": [
+   "slippery satin",
+   "stiff new tie",
+   "joined warm hands",
+   "wet cheeks of joy",
+   "cake knife resistance",
+   "sequin scratch"
+  ],
+  "smell": [
+   "garden roses",
+   "cake icing",
+   "incense",
+   "glass polish",
+   "sewing chalk",
+   "aftershave"
+  ],
+  "taste": [
+   "buttercream",
+   "champagne bubbles",
+   "sugar almond",
+   "salty tears",
+   "wine on the tongue",
+   "stale punch"
+  ],
+  "objects": [
+   "ring",
+   "bouquet",
+   "altar",
+   "guest book",
+   "cake topper",
+   "car ribbon"
+  ],
+  "verbs": [
+   "vow",
+   "exchange",
+   "shower",
+   "toast",
+   "kneel",
+   "weave"
+  ]
+ },
+ "zh": {
+  "sight": [
+   "红双喜",
+   "门帘",
+   "请柬",
+   "花拱门",
+   "满堂宾客",
+   "头上的花"
+  ],
+  "sound": [
+   "鞭炮",
+   "唢呐",
+   "喊嫁",
+   "快门声",
+   "香槟砰",
+   "高跟鞋敲地"
+  ],
+  "touch": [
+   "滑的衣料",
+   "硬的新领带",
+   "握着的手",
+   "湿的眼角",
+   "切蛋糕的刀",
+   "亮片刮手"
+  ],
+  "smell": [
+   "玫瑰",
+   "奶油",
+   "香烛",
+   "擦玻璃的水",
+   "粉笔记号",
+   "须后水"
+  ],
+  "taste": [
+   "奶油",
+   "酒里的气泡",
+   "喜糖",
+   "咸的泪",
+   "舌上的红酒",
+   "糖霜"
+  ],
+  "objects": [
+   "戒指",
+   "捧花",
+   "礼堂",
+   "签到簿",
+   "彩带",
+   "红绸"
+  ],
+  "verbs": [
+   "宣誓",
+   "交换",
+   "撒",
+   "敬酒",
+   "跪",
+   "缝"
+  ]
+ },
+ "ms": {
+  "sight": [
+   "pelamin",
+   "bunga telur",
+   "hantaran",
+   "bunga api",
+   "tetamu berbaris",
+   "cadar pengantin"
+  ],
+  "sound": [
+   "kompang",
+   "rebana",
+   "bacaan nikah",
+   "tepukan",
+   "bunyi kamera",
+   "kasut mengetuk lantai"
+  ],
+  "touch": [
+   "satin licin",
+   "songkok baru",
+   "tangan berganding",
+   "pipi basah",
+   "pisau kek",
+   "cincin di jari"
+  ],
+  "smell": [
+   "melati",
+   "kek ais",
+   "kemenyan",
+   "pencuci kaca",
+   "bedak halus",
+   "minyak wangi"
+  ],
+  "taste": [
+   "kek hantaran",
+   "sirap bandung",
+   "badam bergula",
+   "masin",
+   "sirih",
+   "sirap ros"
+  ],
+  "objects": [
+   "cincin",
+   "bunga rampai",
+   "pelamin",
+   "buku tetamu",
+   "kek",
+   "kereta hias"
+  ],
+  "verbs": [
+   "bernikah",
+   "bersanding",
+   "bertepuk",
+   "bersalaman",
+   "berlutut",
+   "menggulung"
+  ]
+ }
+}

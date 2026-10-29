@@ -1,0 +1,27 @@
+{
+ "_note": "Offline concrete-imagery bank for object writing; no emotion words; original, no lyric quotes.",
+ "languages": [
+  "en",
+  "zh",
+  "ms"
+ ],
+ "usage": "Read ONLY the theme file you need (via assets/imagery/<theme>.json or jq). Do not read all themes.",
+ "themes": {
+  "rain": "assets/imagery/rain.json",
+  "night": "assets/imagery/night.json",
+  "city": "assets/imagery/city.json",
+  "home": "assets/imagery/home.json",
+  "leaving-farewell": "assets/imagery/leaving-farewell.json",
+  "first-love": "assets/imagery/first-love.json",
+  "heartbreak": "assets/imagery/heartbreak.json",
+  "wedding": "assets/imagery/wedding.json",
+  "childhood": "assets/imagery/childhood.json",
+  "road-journey": "assets/imagery/road-journey.json",
+  "sea-coast": "assets/imagery/sea-coast.json",
+  "winter": "assets/imagery/winter.json",
+  "summer": "assets/imagery/summer.json",
+  "morning": "assets/imagery/morning.json",
+  "drinking-bar": "assets/imagery/drinking-bar.json",
+  "work": "assets/imagery/work.json"
+ }
+}

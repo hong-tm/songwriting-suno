@@ -1,0 +1,24 @@
+{
+  "$comment": "Offline lexicon asset for songwriting-suno. Concrete replacements for generic and dead language, seeded from Berklee (Stolpe) power-word lists and Sheila Davis's sensory/specificity rules. Small enough to read whole; read only the keys you need.",
+  "power_verbs": {
+    "walk": ["wander", "stroll", "march", "strut", "shuffle", "amble", "saunter", "storm", "swagger", "steal", "lunge", "stumble", "stagger", "drift"],
+    "say": ["breathe", "blurt", "stammer", "stutter", "mouth", "jabber", "murmur", "hiss", "spit"],
+    "shine": ["glint", "glare", "sparkle", "shimmer", "blaze", "flicker", "glimmer", "smoulder"],
+    "realize": ["unravel", "unearth", "disclose", "dawn on", "sink in", "surface"],
+    "look": ["glance", "stare", "peer", "gaze", "glower", "squint", "scan"],
+    "hold": ["clutch", "clasp", "cradle", "grip", "pin"],
+    "cry": ["weep", "sob", "wail", "whimper", "bawl", "keen"]
+  },
+  "sensory_adjectives": {
+    "sight": ["inky", "sallow", "rosy", "buttery", "ashen", "dappled", "gilded", "bruised"],
+    "sound": ["clamorous", "screeching", "snapping", "roaring", "hushed", "tinny", "thrumming"],
+    "touch": ["cold", "clammy", "prickly", "velvety", "gritty", "slick", "worn"],
+    "taste": ["bubbly", "salty", "sour", "sugary", "bitter", "metallic", "smoky"],
+    "smell": ["smoky", "woodsy", "lemony", "pine", "stale", "acrid", "yeasty"]
+  },
+  "polysensate": ["mint", "ivory", "butterscotch", "sandpaper", "snow", "pina colada", "velvet", "smoke", "salt", "copper", "linen", "cinnamon"],
+  "generic_blacklist": ["very", "nice", "great", "wonderful", "good", "bad", "sad", "big", "small", "happy", "food", "drink", "stuff", "things", "smile", "walking", "sitting"],
+  "dead_metaphor_blacklist": ["broken heart", "dark night", "burning love", "true love", "deep blue sea", "heart of gold", "tears of joy", "soul mate", "cold as ice", "burning flame", "set in stone"],
+  "cliche_rhyme_pairs": [["knowledge", "college"], ["love", "above"], ["heart", "apart"], ["eyes", "lies"], ["fire", "desire"], ["true", "you"], ["day", "away"], ["night", "light"]],
+  "metaphor_seed_terms": ["tide", "power", "fire", "winter", "engine", "thread", "sea", "mirror", "window", "road", "cage", "garden"]
+}

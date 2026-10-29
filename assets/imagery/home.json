@@ -1,0 +1,177 @@
+{
+ "_theme": "home",
+ "en": {
+  "sight": [
+   "peeling paint",
+   "light through the door gap",
+   "worn armchair",
+   "family photo",
+   "leaky faucet",
+   "curtain shadow"
+  ],
+  "sound": [
+   "kettle whistle",
+   "slamming screen door",
+   "washing machine spin",
+   "floorboard creak",
+   "radio static",
+   "clock tick"
+  ],
+  "touch": [
+   "warm doorknob",
+   "frayed blanket",
+   "cool table",
+   "threadbare cushion",
+   "steam on the wrist",
+   "keys in the palm"
+  ],
+  "smell": [
+   "boiled rice",
+   "clean laundry",
+   "burnt toast",
+   "old wood",
+   "coffee pot",
+   "detergent"
+  ],
+  "taste": [
+   "fresh bread",
+   "leftover stew",
+   "hot soup",
+   "chilled milk",
+   "butter on crust",
+   "salt from the bowl"
+  ],
+  "objects": [
+   "fridge magnet",
+   "door key",
+   "kitchen table",
+   "stool",
+   "tea towel",
+   "doorbell"
+  ],
+  "verbs": [
+   "settle",
+   "simmer",
+   "lift",
+   "hang",
+   "brew",
+   "unbolt"
+  ]
+ },
+ "zh": {
+  "sight": [
+   "掉漆的门框",
+   "门缝里的光",
+   "旧沙发",
+   "全家福",
+   "滴水的龙头",
+   "窗影"
+  ],
+  "sound": [
+   "水壶响",
+   "纱门砰",
+   "洗衣机脱水",
+   "楼板吱呀",
+   "收音机",
+   "挂钟滴答"
+  ],
+  "touch": [
+   "温热门把",
+   "磨旧的毯子",
+   "凉的桌面",
+   "起球的坐垫",
+   "烫手的蒸汽",
+   "手心的钥匙"
+  ],
+  "smell": [
+   "米饭香",
+   "洗净的衣服",
+   "糊锅巴",
+   "老木头",
+   "咖啡壶",
+   "洗衣粉"
+  ],
+  "taste": [
+   "热馒头",
+   "剩炖菜",
+   "热汤",
+   "凉牛奶",
+   "面包皮上的黄油",
+   "指上的盐"
+  ],
+  "objects": [
+   "冰箱贴",
+   "门钥匙",
+   "饭桌",
+   "小板凳",
+   "抹布",
+   "门铃"
+  ],
+  "verbs": [
+   "落座",
+   "咕嘟",
+   "掀锅盖",
+   "晾",
+   "泡茶",
+   "开门"
+  ]
+ },
+ "ms": {
+  "sight": [
+   "cat merekah",
+   "celah pintu",
+   "kerusi rotan lusuh",
+   "gambar keluarga",
+   "paip menitis",
+   "bayang tirai"
+  ],
+  "sound": [
+   "cerekuak cerek",
+   "pintu zink",
+   "mesin basuh berpusing",
+   "lantai papan berderit",
+   "bunyi radio",
+   "jam berdetik"
+  ],
+  "touch": [
+   "kenop pintu hangat",
+   "selimut lusuh",
+   "meja dingin",
+   "kusyen nipis",
+   "wap di pergelangan",
+   "kunci di tapak tangan"
+  ],
+  "smell": [
+   "nasi panas",
+   "baju dicuci",
+   "roti hangus",
+   "kayu lama",
+   "cerekuak kopi",
+   "sabun basuh"
+  ],
+  "taste": [
+   "roti panas",
+   "gulai semalam",
+   "sup panas",
+   "susu dingin",
+   "mentega di kerak",
+   "garam di jari"
+  ],
+  "objects": [
+   "kunci pintu",
+   "meja makan",
+   "bangku kayu",
+   "kain lap",
+   "loceng pintu",
+   "tikar"
+  ],
+  "verbs": [
+   "berteduh",
+   "merenih",
+   "angkat tudung periuk",
+   "menggantung",
+   "menyeduh",
+   "membuka pintu"
+  ]
+ }
+}
