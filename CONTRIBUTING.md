@@ -13,15 +13,15 @@ Thanks for helping improve this project.
 
 ## Tests
 
-Run the project's test entrypoint before opening a PR:
+Run the project's test entrypoints before opening a PR:
 
 ```bash
-python3 scripts/selftest.py      # if present
-python3 scripts/selftest.sh      # if present
-# or: make test  /  npm test
+python3 scripts/selftest.py                                # must exit 0
+python3 -m unittest discover -s scripts/tests -t scripts/tests
 ```
 
-CI runs the same on every PR. **PRs must be green.**
+CI runs both on every PR (and on pushes to `main` and `master`). **PRs must be
+green.**
 
 ## Commit style
 
@@ -29,7 +29,7 @@ Conventional Commits: `feat:`, `fix:`, `docs:`, `chore:`, `refactor:`, `test:`.
 
 ## Security
 
-- **Never commit secrets.** Put them in `secrets.d/` and run the vault `pack`.
+- **Never commit secrets** — keep credentials out of this repo entirely.
 - If you find a security issue, report it **privately** to the maintainer — do not
   open a public issue.
 

@@ -70,7 +70,9 @@ scripts/                 runnable tools (prefer running over reading)
   lyric_lint.py          rhyme scheme / repetition / cliche lint
   validate_structure.py  section tags + basic song shape
   check_freshness.py     staleness report from assets/freshness.json
+  source_check.py        URL lint for sources in references
   selftest.py            one command that runs every check
+  tests/                 stdlib unittest suite (runs the CLIs via subprocess)
 assets/                  templates, presets, registries, offline data
   imagery-lexicon.json   index of the offline imagery bank (read one theme)
   imagery/<theme>.json   16 themes of concrete sensory material
@@ -80,28 +82,36 @@ assets/                  templates, presets, registries, offline data
   song-template.md       output template
   freshness.json         what to re-verify and when
   learner-profile.md     learner profile template (copy outside the repo)
+evals/evals.json         behavioral spec: 19 cases (spec only, no runner)
+.github/workflows/ci.yml CI: selftest + unittest on PRs and pushes to main/master
 ```
 
 ## Verify
 
 ```bash
-python3 scripts/selftest.py        # must exit 0
+python3 scripts/selftest.py                         # must exit 0
+python3 -m unittest discover -s scripts/tests -t scripts/tests
 python3 scripts/check_freshness.py --check-coverage
 ```
 
 ## Companion libraries
 
-This skill routes deep craft work to two MIT skill libraries by `jtydhr88`
-(`lw-*` lyric writing, `mc-*` music composition):
+This skill can route deep craft work to two MIT skill libraries by `jtydhr88`
+(`lw-*` lyric writing, `mc-*` music composition). When they are present on
+the host, deep craft goes to them (routing table:
+`references/70-craft-gate-and-spec.md` §5); when absent, this bundle alone
+runs the full pipeline, start to finish.
 
-- **12 active** in `~/.agents/skills/` (auto-loaded): `lw-workflow`,
+For reference, the author's setup keeps the full set installed:
+
+- 12 active in `~/.agents/skills/` (auto-loaded): `lw-workflow`,
   `lw-song-intent`, `lw-structure`, `lw-imagery`, `lw-mandarin`, `lw-tone-check`,
   `lw-ai-tell-audit`, `mc-workflow`, `mc-arrangement-arch`, `mc-vocal-direction`,
   `mc-render-compile`, `mc-ai-tell-audit`.
-- **35 parked** in `~/.agents/skills-library/` (not in the menu; read by path
+- 35 more parked in `~/.agents/skills-library/` (not in the menu; read by path
   when needed).
 
-Routing table: `references/70-craft-gate-and-spec.md` §5.
+Those counts are an example, not a requirement.
 
 ## Data & privacy
 

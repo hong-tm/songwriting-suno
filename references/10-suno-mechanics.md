@@ -8,7 +8,7 @@
 - Suno documents the **fields, sliders, and Exclude**. It does **not** document the bracket meta-tag system: Suno's own help-center search for "metatags" returns "No results". The tag vocabulary is community-discovered.
 - Only two bracket usages are officially acknowledged: `[female vocals]` in the Exclude Styles release note, and "Verse" / "Outro" structure labels in the July 2026 lyrics-improvements note.
 - Put global style in **Style of Music** (plain descriptors, no brackets), section cues in **Lyrics** (brackets on their own line), and negatives in **Exclude**, never as "no X" in Style.
-- `[Square brackets]` are instructions and are **never sung**. `(Parentheses)` are backing vocals and are **always sung**, even instructions like `(whispered)`.
+- `[Square brackets]` are instructions and are **never sung**. On **v6**, `(parentheses)` holding a director note — `(whispered)`, `(Vocal 1: Soft Spoken)` — are read as **vocal direction and not sung**; inline parentheses that echo the lead stay backing vocals. The bracket does not decide, the content does. **[COMMUNITY, v6 field test 2026-10-21; pre-v6 reports split]**
 - Character limits are unpublished. Measured values (v6): Style 1,000 / Exclude 1,000 / Lyrics 5,000 / Title ~100 (third-party API says 80). **[COMMUNITY, measured]**
 - Tags are probabilistic hints, not commands. Keep 2 to 4 tags per section; the leftmost tag in a line has priority.
 - **Exclude Styles requires Pro or Premier.** Excluded items show up in the preview with a leading `-` (for example `-piano`).
@@ -103,7 +103,8 @@ A lyrics-box layout assembled from the attested fragments above:
 [female vocals]                      <- official: pair with Exclude "male vocals"
 [Intro: sparse drums]                <- colon syntax (community)
 
-(hey!) (oh-oh)                       <- parentheses: always sung, backing vocals
+(hey!) (oh-oh)                       <- inline echo: sung as a backing vocal
+(whispered)                          <- v6: director note, performed not sung
 [Verse 1]
 I keep the receipts of every summer...
 [Pre-Chorus: building]               <- style + structure in one tag
@@ -194,7 +195,7 @@ Notes:
 | Syntax | Interpreted as | Flag |
 |---|---|---|
 | `[Square brackets]` | Instruction or cue; **never sung**; own line above the section | UNOFF (except the official `[female vocals]` example) |
-| `(parentheses)` | **Backing vocal / ad-lib / echo, ALWAYS sung.** Instructions inside get sung literally: `(whispered)` makes Suno sing the word "whispered" | UNOFF (strong consensus) |
+| `(parentheses)` | **Content decides.** Inline echo of the lead (`(hey!)`) = backing vocal, sung. A director note (`(whispered)`, `(Vocal 1: Soft Spoken)`) = **performed as direction, not sung** on v6; pre-v6 reports split, some sang the words literally | UNOFF (v6 field test 2026-10-21; pre-v6 community) |
 | Line breaks | Single break = within a section; blank line = section break; each line is roughly one breath | UNOFF |
 | ALL CAPS | Louder / more forceful; use on 1 to 3 words | UNOFF |
 | `~` | Sustain with vibrato | UNOFF (SongSmith) |
@@ -213,7 +214,7 @@ Facts present in the sources:
 - **Stems:** Auto Split = 12 stem categories; Split from Mix = one instrument plus the rest; **Advanced Split** (~100 instruments) is **Premier only** (updated 2026-06-11). **[OFFICIAL]**
 - **Plan gating:** Exclude Styles is **Pro/Premier**; Advanced Split is Premier; Max Mode costs extra credits. **[OFFICIAL]**
 - Personas are **public by default**; artist-name prompts are filtered ("we've never allowed prompts for specific artists", Suno responsibility blog). **[OFFICIAL]**
-- Not covered by this research: full pricing tables, credit costs per generation, and Suno's copyright/ownership terms. Inpainting / "Replace Section" was not documented in the sources reviewed.
+- Not covered by this research: full pricing tables, credit costs per generation, and Suno's copyright/ownership terms. **Replace Section** (in-place middle-section edit) is documented: Pro/Premier, More Actions > Edit > Replace Section (help 3271873, checked 2026-10-31). **[OFFICIAL]**
 
 ## 14. Official vs community lore, at a glance
 
@@ -228,6 +229,7 @@ Official (suno.com / help.suno.com):
 - v6 FAQ: https://help.suno.com/en/articles/13924481
 - Exclude Styles: https://help.suno.com/en/articles/3161921
 - Personas: https://help.suno.com/en/articles/3484161
+- Replace Section: https://help.suno.com/en/articles/3271873
 - Android Create: Custom Mode: https://help.suno.com/en/articles/3726721
 - iOS Create: Custom Mode: https://help.suno.com/en/articles/3197377
 - Android Create: Simple Mode: https://help.suno.com/en/articles/3726657
@@ -260,4 +262,4 @@ Community:
 - stokemctoke.com, complete Suno meta tags guide
 - roo.beehiiv.com, "Suno V5.5 Best Practices: The Tag That Doesn't Exist"
 - docs.sunoapi.org/suno-api/generate-music (third-party API limits)
-- suno.com/style/suno-will-usually-treat-text-in-parentheses-as-a-backing-vocal-or-a- (user-created style page, not official docs)
+- v6 parentheses behaviour: field test recorded in references/13-vocal-control.md §2 (2026-10-21, real v6 clip); the older "always sung" claim traces to suno.com/style/suno-will-usually-treat-text-in-parentheses-as-a-backing-vocal-or-a- (user-created style page, not official docs)

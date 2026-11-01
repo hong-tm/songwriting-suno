@@ -27,6 +27,8 @@ Checks (in order):
                  linter is wired end to end; SKIP if the script is absent
   7. json        evals/evals.json, assets/freshness.json and
                  assets/persona-presets.json each parse with json.load
+  8. evals       check_evals.py exits 0 on the repo's evals/evals.json
+                 (structural contract: ids, fields, path references)
 
 Exit codes:
     0  no FAIL verdicts (SKIP allowed)
@@ -142,6 +144,13 @@ def check_freshness_coverage() -> CheckResult:
     return CheckResult("freshness:coverage", verdict, describe(proc))
 
 
+def check_evals_structure() -> CheckResult:
+    """Check 8: evals/evals.json satisfies the structural contract."""
+    proc = run_tool([str(SCRIPTS_DIR / "check_evals.py")])
+    verdict = PASS if proc.returncode == 0 else FAIL
+    return CheckResult("evals:structure", verdict, describe(proc))
+
+
 def check_lyric_lint_fixture() -> CheckResult:
     """Check 6: lyric_lint.py flags its built-in cliche fixture (exit 1)."""
     script = SCRIPTS_DIR / LYRIC_LINT
@@ -173,6 +182,7 @@ def run_checks() -> list[CheckResult]:
     checks.extend(script_help_checks())
     checks.extend(check_unittest(d) for d in tests_dirs())
     checks.append(check_freshness_coverage())
+    checks.append(check_evals_structure())
 
     structure = run_tool(
         [str(SCRIPTS_DIR / "validate_structure.py")], STRUCTURE_FIXTURE

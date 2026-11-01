@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-10-08",
+  "updated": "2026-10-31",
   "tiers": {
     "high": {
       "warn_days": 30,
@@ -18,13 +18,13 @@
   "entries": {
     "SKILL.md": {
       "volatility": "medium",
-      "last_verified": "2026-10-07",
+      "last_verified": "2026-10-31",
       "sources": [],
       "notes": "Core skill: modes, workflow, routing, quick rules"
     },
     "references/00-index.md": {
       "volatility": "medium",
-      "last_verified": "2026-10-07",
+      "last_verified": "2026-10-31",
       "sources": [],
       "notes": "Annotated index of the whole bundle"
     },
@@ -114,33 +114,41 @@
     },
     "references/10-suno-mechanics.md": {
       "volatility": "high",
-      "last_verified": "2026-10-07",
+      "last_verified": "2026-10-31",
       "sources": [
         "https://help.suno.com/en/articles/13924481",
+        "https://help.suno.com/en/articles/13924737",
+        "https://help.suno.com/en/articles/13924801",
+        "https://help.suno.com/en/articles/13924929",
         "https://help.suno.com/en/articles/3161921",
         "https://help.suno.com/en/articles/3484161",
         "https://help.suno.com/en/articles/3726721",
-        "https://help.suno.com/en/articles/3197377",
-        "https://help.suno.com/en/articles/3726657"
+        "https://help.suno.com/en/articles/10625537",
+        "https://help.suno.com/en/articles/6141377",
+        "https://help.suno.com/en/articles/9010177",
+        "https://help.suno.com/en/articles/12702337",
+        "https://help.suno.com/en/articles/3271873"
       ],
       "notes": "Suno modes, fields, models, limits, pricing, rights"
     },
     "references/11-suno-prompting.md": {
       "volatility": "medium",
-      "last_verified": "2026-10-07",
+      "last_verified": "2026-10-31",
       "sources": [
-        "https://help.suno.com/en/articles/5782721",
-        "https://help.suno.com/en/articles/2409473",
-        "https://help.suno.com/en/articles/5782849",
-        "https://help.suno.com/en/articles/8105153",
+        "https://help.suno.com/en/articles/13924737",
+        "https://help.suno.com/en/articles/13924801",
+        "https://help.suno.com/en/articles/13924929",
+        "https://help.suno.com/en/articles/13924481",
+        "https://suno.com/blog/introducing-v4-5",
         "https://www.suno.com/release-notes/introducing-v5-the-world-s-best-music-model",
-        "https://www.suno.com/blog/v5-5"
+        "https://www.suno.com/blog/v5-5",
+        "https://suno.com/release-notes"
       ],
       "notes": "Suno style prompts, meta-tags, recipes"
     },
     "references/12-suno-workflows.md": {
       "volatility": "medium",
-      "last_verified": "2026-10-07",
+      "last_verified": "2026-10-31",
       "sources": [
         "https://suno.com/pricing",
         "https://suno.com/release-notes",
@@ -153,7 +161,7 @@
     },
     "references/13-vocal-control.md": {
       "volatility": "medium",
-      "last_verified": "2026-10-07",
+      "last_verified": "2026-10-31",
       "sources": [
         "https://help.suno.com/en/categories/550017-making-music",
         "https://help.suno.com/en/articles/2415873",
@@ -166,14 +174,15 @@
     },
     "references/20-tools-and-projects.md": {
       "volatility": "high",
-      "last_verified": "2026-10-07",
+      "last_verified": "2026-10-31",
       "sources": [
         "https://github.com/gcui-art/suno-api",
         "https://github.com/gochendong/suno-api",
         "https://github.com/paperfoot/suno-cli",
         "https://github.com/slauger/suno-cli",
-        "https://github.com/worthable/suno-sdk",
-        "https://github.com/CodeKeanu/suno-mcp"
+        "https://github.com/worthable/suno-api",
+        "https://github.com/CodeKeanu/suno-mcp",
+        "https://suno.com/release-notes/suno-mcp-beta"
       ],
       "notes": "GitHub projects, APIs, libraries, datasets, alternatives"
     },
@@ -205,7 +214,7 @@
     },
     "references/50-self-update.md": {
       "volatility": "medium",
-      "last_verified": "2026-10-07",
+      "last_verified": "2026-10-31",
       "sources": [
         "https://help.suno.com/",
         "https://sunhelp.zendesk.com/",
@@ -224,7 +233,7 @@
     },
     "references/70-craft-gate-and-spec.md": {
       "volatility": "low",
-      "last_verified": "2026-10-08",
+      "last_verified": "2026-10-31",
       "sources": [
         "https://github.com/jtydhr88/lyric-writing-skills",
         "https://github.com/jtydhr88/music-composition-skills"

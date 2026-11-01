@@ -94,8 +94,10 @@ different character limits, a model name changed, a feature is gone:
 
 | Tier | Warn | Stale | Applies to | Tier rule |
 |---|---|---|---|---|
-| **high** | 30d | 60d | `10-suno-mechanics.md`, `11-suno-prompting.md`, `12-suno-workflows.md` | model versions, limits, pricing, feature UI |
-| **medium** | 90d | 180d | `13-vocal-control.md`, `20-tools-and-projects.md`, `00-index.md` | community tag catalogues, tool ecosystem |
+| **high** | 30d | 60d | `10-suno-mechanics.md`, `20-tools-and-projects.md` | model versions, limits, pricing, feature UI, live tool links |
+| **medium** | 90d | 180d | `11-suno-prompting.md`, `12-suno-workflows.md`, `13-vocal-control.md`, `00-index.md` | community tag catalogues, feature workflows, tool ecosystem |
+
+The per-file authoritative assignment lives in `assets/freshness.json`; this table summarizes it — when the two disagree, the registry wins and this table gets fixed.
 | **low** | 365d | 730d | `01`–`06`, `30` (craft), SKILL.md workflow prose | musical craft knowledge changes glacially |
 
 **Tie-break rule:** if unsure of a file's tier, pick the FASTER (more

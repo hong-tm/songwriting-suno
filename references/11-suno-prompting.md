@@ -18,9 +18,9 @@
 Official documentation is thin on prompt grammar. Suno documents:
 
 - **Exclude** as the negative control, not inline "no X". (help 3161921)
-- **Creative Sliders**: *Weirdness* (Safe to Chaos, 50% = normal) and *Style Influence* (Loose to Strong). (help 6141377)
+- **Creative Sliders**: *Weirdness* (Safe to Chaos, 50% = normal), *Style Influence* (Loose to Strong), plus a third *Audio Influence* slider when you start from an audio upload. (help 6141377) **[OFFICIAL, verified 2026-10-31]**
 - A **music glossary** of vocabulary terms. (help 9010177)
-- That **v4.5 and later accept more detailed, even conversational style instructions**; the official example moved from `deep house, emotional, melodic` to a full sentence brief. (help 5782849)
+- That **v4.5 and later accept more detailed, even conversational style instructions**; v4.5 added evocative descriptions plus a prompt-enhancement helper, and v6 takes "complex and diverse styles/instructions" in Simple mode. (v4.5 blog; help 13924481) **[OFFICIAL, verified 2026-10-31]**
 
 Suno does **not** publish a weight or emphasis syntax, a field-ordering rule, a tag-count limit, a comma-vs-period rule, or character limits in help articles. One community reference (zarlor) reviewed help.suno.com and found no official article stating the character limits. Nearly everything below about *structure* is reverse-engineered community practice.
 
@@ -146,18 +146,18 @@ Practical expectation: "same lyrics, different music" is normal behaviour, not a
 | **v4** | Nov 2024 (blog Nov 19, 2024) | 4:00 | Simple descriptors (200-char style cap) | Cleaner audio; Extend, Cover, Persona, Remaster, ReMi |
 | **v4.5** | May 1, 2025 | 8:00 | **Conversational, detailed sentences** | Expanded genres/mashups, better prompt adherence, Enhance helper |
 | **v4.5+** | July 2025 | 8:00 | Conversational | Add Vocals / Add Instrumental |
-| **v5** | Sept 2025 (blog Sep 23; help Sep 25) | 8:00 | Crisp descriptors; emotional beats technical | Cleanest audio, authentic vocals, composition architecture, pro control suite |
+| **v5** | Sept 2025 (blog Sep 23) | 8:00 | Crisp descriptors; emotional beats technical | Cleanest audio, authentic vocals, composition architecture, pro control suite |
 | **v5.5** | **Mar 26, 2026** | 8:00 | Crisp film-brief; most expressive; Duration slider 10 to 360 s (added Jul 20, 2026, web) | **Voices, Custom Models, My Taste**; finer descriptor resolution |
-| **v6 / v6-wild / v6-mini** | **Sep 9, 2026** | 8:00 | **Ordered production direction**, sentence-shaped, longer | Plain-language section edit, mashups, multimodal inputs (text/audio/image/video), **Max Mode**, **Variety** slider, **Duration 0:10 to 6:00**; **all prior models retired** |
+| **v6 / v6-wild / v6-mini** | **Sep 9, 2026** | 8:00 | **Ordered production direction**, sentence-shaped, longer | Plain-language section edit, mashups, multimodal inputs (text/audio/image/video), **Max Mode**, **Variety** slider, **Duration 0:10 to 6:00**; **all prior models retired**; v6 and v6-wild are paid-plan only, v6-mini is on every plan **[OFFICIAL, 2026-10-31]** |
 
-Official sources: Model Timeline (help 5782721), Song length (help 2409473), the v3/v3.5/v4/v4.5/v5/v5.5/v6 blogs and release notes, v6 FAQ (help 13924481), Duration slider release note.
+Official sources: Current Models: v6 (help 13924737), What's new in v6 (help 13924801), How long will my song be (help 13924929), the v3/v3.5/v4/v4.5/v5/v5.5/v6 blogs and release notes, v6 FAQ (help 13924481), Duration slider release note. The earlier Model Timeline (help 5782721) and Song length (help 2409473) articles now 404; the three links above replace them **[verified 2026-10-31]**.
 
 **Model-specific prompt diagnostics (COMMUNITY):** nwp's model-comparison rates v4.5 as the reliable workhorse (heavy genres, 8-minute songs), v5 as the cleanest with the best vocals but "insists on addition of intro vocals", v4.5+ as creative/unstable, v4 as chaotic. mttkllr rates v5.5 as most expressive but **more sensitive to vague prompts**, and reports mid-track degradation plus pop reversion (workaround: generate on v4.5/v5, then Cover on v5.5).
 
 **Stems and timing:**
 
 - **Auto Split** = 12 stem categories; **Split from Mix** = one instrument + the rest; **Advanced Split** = ~100 instruments, Premier only. Updated 2026-06-11. **[OFFICIAL]**
-- **Duration slider** launched 2026-07-20 on web using v5.5 **[OFFICIAL]**; third-party spec = 10 to 360 seconds (Dolly); v6 Duration control = 0:10 to 6:00 (zarlor), with generation up to 8 minutes.
+- **Duration slider** launched 2026-07-20 on web using v5.5 **[OFFICIAL]**; third-party spec = 10 to 360 seconds (Dolly); v6 Duration control = 0:10 to 6:00 (zarlor), and each v6-family model generates up to 8 minutes **[OFFICIAL, help 13924929, verified 2026-10-31]**.
 - **A prompt cannot set exact timestamps.** Metatags are "signal weights, not hard switches"; structure labels do not control timestamps (jackrighteous, ToneDraft). A timestamped-lyrics API exists for post-generation analysis.
 
 ## 7. Prompt formulas on record
@@ -194,7 +194,7 @@ Official sources: Model Timeline (help 5782721), Song length (help 2409473), the
 | **Tag count** | 8 to 15 (ToneDraft, HookGenius) | 4 to 7 (SongSmith, wowhow); 3 to 5 simple / 8 to 15 detailed (mttkllr) | **Conflict by model era.** Consensus: fewer, sharper on v5.5/v6; more room on v4.5 |
 | **Commas vs periods/pipes** | Comma-separated is standard in most templates | mttkllr: use periods + "and/with"; sunomarket: commas are "optional, ignored" | **Community-only, unverified.** No official grammar exists |
 | **Brackets in the Style box** | mikefluff: brackets in lyrics, plain prose in Style | sunomarket comma-free guide: wrap Style layers in `[Genre: ...]` brackets | **Direct conflict, community.** Official docs do not address it |
-| **Character limits** | API resellers: Style 1,000 / Lyrics 5,000 (v4.5+); ToneDraft: Style 1,000 | mikefluff: Lyrics 3,000 on v5.5; zarlor: numbers are "community-attested, not officially documented" | **Conflict.** Treat as working limits, not documented facts |
+| **Character limits** | API resellers: Style 1,000 / Lyrics 5,000 (v4.5+); ToneDraft: Style 1,000; HookGenius, read off the live v6 composer: Style 1,000 / Lyrics 5,000 / Exclude Styles 1,000 **[COMMUNITY, measured 2026-10-29]** | mikefluff: Lyrics 3,000 on v5.5; zarlor: numbers are "community-attested, not officially documented" | **Conflict.** Treat as working limits, not documented facts; the v6-era numbers agree at 1,000 / 5,000 / 1,000 |
 | **Exclude reliability** | OFFICIAL + freesongwritingtools: use it | heho: "most disputed control"; users report it ignores them | **Conflict.** Official says use it; efficacy unmeasured |
 | **v5 adds intro vocals** | COMMUNITY (nwp, mttkllr) | Not in official release notes | **Community-only** |
 | **MAX Mode syntax `[IS_MAX_MODE: MAX]`** | Community hack (mttkllr, Reddit) | OFFICIAL v6 Max Mode is a **toggle** costing extra credits (one source reports roughly 2x) | **Distinct things.** Do not conflate |
@@ -284,10 +284,10 @@ Ending Instruction: complete every written lyric before a short instrumental out
 
 Official (suno.com / help.suno.com):
 
-- Model Timeline: https://help.suno.com/en/articles/5782721
-- Song length: https://help.suno.com/en/articles/2409473
-- v4.5 detailed style instructions: https://help.suno.com/en/articles/5782849
-- Introducing v5: https://help.suno.com/en/articles/8105153
+- Current Models: v6: https://help.suno.com/en/articles/13924737
+- What's new in v6: https://help.suno.com/en/articles/13924801
+- How do I change models: https://help.suno.com/en/articles/13924993
+- How long will my song be (v6): https://help.suno.com/en/articles/13924929
 - v5 release note: https://www.suno.com/release-notes/introducing-v5-the-world-s-best-music-model
 - v5.5 blog: https://www.suno.com/blog/v5-5
 - v6 blog: https://suno.com/blog/introducing-v6
@@ -310,6 +310,7 @@ Community / vendor:
 - sunomarket: guides/suno-prompts; guides/hidden-control-syntax; guides/comma-free-suno-prompts; guides/control-bpm-tempo; blog/suno-vocal-control-guide; blog/suno-prompt-mistakes (https://sunomarket.com)
 - ToneDraft: suno-ai-prompt-guide-2026 and suno-metatags-guide (https://www.tonedraft.com/en/blog/)
 - HookGenius cheat sheet: https://hookgenius.app/suno-cheat-sheet/
+- HookGenius v6 prompt guide (updated 2026-10-29): https://hookgenius.app/learn/suno-prompt-guide-2026/
 - SongSmith: suno-style-prompt-formula, suno-genre-style-prompt-templates, suno-lyric-formatting-symbols, suno-bpm-cheat-sheet (https://songsmith.studio/blog/)
 - Lumiere v5.5 guide: https://lumiereprompt.com/en/blog/suno-v55-prompt-guide-2026
 - Suno.bi v5.5 templates: https://suno.bi/en/blog/suno-v5-5-prompt-engineering-advanced-techniques-2026
