@@ -114,7 +114,7 @@
     },
     "references/10-suno-mechanics.md": {
       "volatility": "high",
-      "last_verified": "2026-10-31",
+      "last_verified": "2026-11-01",
       "sources": [
         "https://help.suno.com/en/articles/13924481",
         "https://help.suno.com/en/articles/13924737",
@@ -123,6 +123,8 @@
         "https://help.suno.com/en/articles/3161921",
         "https://help.suno.com/en/articles/3484161",
         "https://help.suno.com/en/articles/3726721",
+        "https://help.suno.com/en/articles/3197377",
+        "https://help.suno.com/en/articles/3726657",
         "https://help.suno.com/en/articles/10625537",
         "https://help.suno.com/en/articles/6141377",
         "https://help.suno.com/en/articles/9010177",
@@ -148,14 +150,15 @@
     },
     "references/12-suno-workflows.md": {
       "volatility": "medium",
-      "last_verified": "2026-10-31",
+      "last_verified": "2026-11-01",
       "sources": [
         "https://suno.com/pricing",
         "https://suno.com/release-notes",
         "https://suno.com/blog/introducing-v6",
         "https://suno.com/blog/suno-updates-tos",
         "https://suno.com/blog/v5-5",
-        "https://suno.com/blog/covers"
+        "https://suno.com/blog/covers",
+        "https://help.suno.com/en/articles/14551361"
       ],
       "notes": "Suno extend/cover/stems/personas, alternatives"
     },

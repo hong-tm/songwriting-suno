@@ -53,8 +53,7 @@ class EvalFixture:
 
 
 class CheckEvalsTests(unittest.TestCase):
-    def __init__(self, methodName: str = "runTest") -> None:
-        super().__init__(methodName)
+    def setUp(self) -> None:
         tmp = tempfile.TemporaryDirectory()
         self.addCleanup(tmp.cleanup)
         self.fx = EvalFixture(Path(tmp.name))

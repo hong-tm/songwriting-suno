@@ -107,7 +107,7 @@ Non-repo guides: Blake Crosley's Suno tags/meta-tags guide (https://blakecrosley
 
 1. **Prompting knowledge:** stayen/suno-reference and mttkllr/suno-field-guide for the mental model and tag syntax, then naqashmunir21/awesome-suno-prompts for genre styles.
 2. **Skill design:** bitwize-music-studio/claude-ai-music-skills is the best working reference for a full Suno pipeline (CC0, reusable); jtydhr88/lyric-writing-skills is the deepest lyric-craft library; the hermes skill shows a minimal validated version.
-3. **Programmatic generation:** Suno's own MCP (beta) when you want nothing reverse-engineered, AceDataCloud/SunoMCP for a mature third-party MCP, gcui-art/suno-api for HTTP. Avoid the 1000+ star repos (SunoAI-API, yihong0618, Malith-Rukshan): abandoned, Suno changed since.
+3. **Programmatic generation:** Suno's own MCP (beta) when you want nothing reverse-engineered, AceDataCloud/SunoMCP for a mature third-party MCP, gcui-art/suno-api for HTTP. Avoid the abandoned high-profile repos (SunoAI-API/Suno-API at 1818 stars, yihong0618/SunoSongsCreator, Malith-Rukshan/Suno-API): Suno changed since they were written.
 4. **Data grounding:** Chordonomicon for progressions with structure labels, ccmusic song_structure for section layouts, Song Describer for caption examples.
 5. **Self-hosted generation:** ACE-Step-1.5, driven through AgriciDaniel/claude-music, avoids reverse-engineered APIs entirely.
 

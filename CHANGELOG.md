@@ -8,6 +8,13 @@ See `references/50-self-update.md` for the full update protocol.
 
 ---
 
+## 2026-11-01 — review fixes for PR #1 (registry sources, tier table, install guard)
+
+- **Touched:** `assets/freshness.json`, `references/20-tools-and-projects.md`, `references/50-self-update.md`, `install.sh`, `scripts/tests/test_check_evals.py`
+- **Facts changed:** registry hygiene and doc consistency, no Suno facts changed — restored `3197377`/`3726657` to the 10 sources and added `14551361` (Suno MCP beta) to the 12 sources (all three URLs verified live 2026-11-01, HTTP 200); the 20 recommendation no longer says "1000+ star repos" (only SunoAI-API at 1818 stars qualifies); the 50 tier table is contiguous again and lists SKILL.md as medium, matching the registry; install.sh now refuses to install into its own source tree and requires `name: songwriting-suno` in an existing destination SKILL.md; the check_evals test fixture moved from `__init__` to `setUp()` per suite convention.
+- **Sources:** PR #1 review findings (Copilot); live checks of https://help.suno.com/en/articles/3197377 , 3726657 , 14551361 (all HTTP 200 on 2026-11-01)
+- **Freshness:** `references/10-suno-mechanics.md` and `references/12-suno-workflows.md` rows re-verified -> 2026-11-01; no other rows changed
+
 ## 2026-10-31 — mass-ulw optimization pass: fact refresh, verification layer, packaging
 
 - **Touched:** `references/10-suno-mechanics.md`, `references/11-suno-prompting.md`, `references/12-suno-workflows.md`, `references/20-tools-and-projects.md` (fact refresh), `references/13-vocal-control.md` (verified, unchanged), `SKILL.md`, `references/00-index.md`, `references/50-self-update.md`, `references/70-craft-gate-and-spec.md`, `assets/freshness.json`, `scripts/selftest.py`, `scripts/check_evals.py` (new), `scripts/tests/test_check_evals.py` (new), `scripts/tests/test_validate_structure.py` (new), `scripts/tests/test_syllable_meter.py` (new), `README.md`, `CONTRIBUTING.md`, `install.sh`, `.github/workflows/ci.yml`, `.gitignore`, this changelog (count fix below)
