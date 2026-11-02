@@ -12,7 +12,7 @@ mkdir -p "$DEST_ROOT"
 
 # Guard the removal: refuse the source tree itself, and replace only an
 # empty target or a previous install of THIS skill.
-if [ "$DEST" = "$SRC" ]; then
+if [ -e "$DEST" ] && [ "$DEST" -ef "$SRC" ]; then
   echo "refusing to install into the source tree itself: $DEST" >&2
   exit 1
 fi
