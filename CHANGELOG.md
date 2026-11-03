@@ -8,6 +8,36 @@ See `references/50-self-update.md` for the full update protocol.
 
 ---
 
+## 2026-11-02 — packaging gate + source_check coverage (ulw pass 2)
+
+- **Touched:** `install.sh`, `scripts/selftest.py`, `scripts/tests/test_source_check.py` (new), this changelog
+- **Facts changed:** no Suno facts changed — packaging: `install.sh` now also excludes `.github/`, `.gitignore`, `AGENTS.md`, `scripts/AGENTS.md` and `*.pyc` from the installed copy (repo-dev artifacts only; payload unchanged); `selftest.py` gained check group 9 `install:smoke`, which really runs `install.sh` into a throwaway directory and asserts payload present + artifacts absent (SKIP without bash; proven to FAIL against the pre-change installer); `source_check.py` (URL lint imported by `check_freshness.py`) now has direct stdlib unittest coverage (16 cases, mutation-proven) — tests are 123 total, selftest 17 checks.
+- **Sources:** none — no external facts consulted
+- **Freshness:** none — no fact-bearing reference changed
+
+## 2026-11-01 — review fixes for PR #1 (registry sources, tier table, install guard)
+
+- **Touched:** `assets/freshness.json`, `references/20-tools-and-projects.md`, `references/50-self-update.md`, `install.sh`, `scripts/tests/test_check_evals.py`
+- **Facts changed:** registry hygiene and doc consistency, no Suno facts changed — restored `3197377`/`3726657` to the 10 sources and added `14551361` (Suno MCP beta) to the 12 sources (all three URLs verified live 2026-11-01, HTTP 200); the 20 recommendation no longer says "1000+ star repos" (only SunoAI-API at 1818 stars qualifies); the 50 tier table is contiguous again and lists SKILL.md as medium, matching the registry; install.sh now refuses to install into its own source tree and requires `name: songwriting-suno` in an existing destination SKILL.md; the check_evals test fixture moved from `__init__` to `setUp()` per suite convention.
+- **Sources:** PR #1 review findings (Copilot); live checks of https://help.suno.com/en/articles/3197377 , 3726657 , 14551361 (all HTTP 200 on 2026-11-01)
+- **Freshness:** `references/10-suno-mechanics.md` and `references/12-suno-workflows.md` rows re-verified -> 2026-11-01; no other rows changed
+
+## 2026-10-31 — mass-ulw optimization pass: fact refresh, verification layer, packaging
+
+- **Touched:** `references/10-suno-mechanics.md`, `references/11-suno-prompting.md`, `references/12-suno-workflows.md`, `references/20-tools-and-projects.md` (fact refresh), `references/13-vocal-control.md` (verified, unchanged), `SKILL.md`, `references/00-index.md`, `references/50-self-update.md`, `references/70-craft-gate-and-spec.md`, `assets/freshness.json`, `scripts/selftest.py`, `scripts/check_evals.py` (new), `scripts/tests/test_check_evals.py` (new), `scripts/tests/test_validate_structure.py` (new), `scripts/tests/test_syllable_meter.py` (new), `README.md`, `CONTRIBUTING.md`, `install.sh`, `.github/workflows/ci.yml`, `.gitignore`, this changelog (count fix below)
+- **Facts changed:**
+  - 10 (3 spots): parentheses rule corrected to the v6 behavior — a director note like `(whispered)` is performed as vocal direction, NOT sung; inline echoes like `(hey!)` stay backing vocals [COMMUNITY, v6 field test 2026-10-21; pre-v6 reports split]. Removes the contradiction with 13 §2.
+  - 10: stems/Replace-Section/Custom-Models citations re-verified against live help articles; limits table re-confirmed still unpublished.
+  - 11: §1 v4.5 style-instruction bullet re-sourced (dead citation replaced); third Creative Slider (Audio Influence) added [OFFICIAL].
+  - 12: §2.9 Custom Models — Premier collaboration + 2x inputs (Oct 15 2026 release note) [OFFICIAL]; §2.9 Workspaces (Pro/Premier, invite-only) [OFFICIAL]; §2.11 Studio 2.0 clip-editing additions (Oct 8+ 2026) [OFFICIAL].
+  - 20: full GitHub survey re-run (63 repos); Suno's own beta MCP added [OFFICIAL, 2026-10-28]; star counts and staleness rows updated; survey date bumped to 2026-10-31.
+  - Verification layer added: `scripts/check_evals.py` (structural contract for evals/evals.json: unique ids, required fields, script/asset path refs resolve) wired into selftest as check group 8 (`evals:structure`); three new test files (+55 tests, 52 -> 107 total; each mutation-proven to fail).
+  - Packaging: `install.sh` destination-guarded (refuses to rm -rf a non-skill dir), excludes `.git/`/`.omo/`/`__pycache__`, made executable; `ci.yml` triggers on master too and runs only the two real entrypoints; CONTRIBUTING/README drift removed (selftest.sh / make / npm / secrets.d never existed; Layout now lists source_check.py, scripts/tests/, evals/, .github/).
+  - Companion-library routing made host-relative: the 12-active/35-parked counts are the author's setup; when `lw-*`/`mc-*` are absent the bundle runs the full pipeline alone (70 §5 fallback).
+  - Corrected history: the 2026-10-07 tooling entry said "+ 25 tests" for lyric_lint; the file has 31.
+- **Sources:** https://help.suno.com/en/articles/13924481 , 13924737 , 13924801 , 13924929 , 3161921 , 3484161 , 10625537 , 6141377 , 9010177 , 12702337 , 3271873 ; https://suno.com/release-notes (incl. suno-mcp-beta, Oct 15 2026 collaboration note); https://suno.com/blog/introducing-v4-5 ; https://suno.com/pricing ; GitHub REST survey of 63 repos 2026-10-31
+- **Freshness:** 10, 11, 12, 13, 20 re-verified -> 2026-10-31 (13 unchanged, bump only); SKILL.md, 00-index, 50-self-update, 70-craft-gate -> 2026-10-31; registry `updated` -> 2026-10-31
+
 ## 2026-10-08 — craft gate + spec sheet, and companion-library routing
 
 - **Touched:** `references/70-craft-gate-and-spec.md` (new),
@@ -66,7 +96,7 @@ See `references/50-self-update.md` for the full update protocol.
     `scripts/source_check.py`, so a broken source URL now fails the check (exit 1)
   - Added `scripts/selftest.py`: one cwd-independent command running script help
     checks, unit tests, freshness coverage, and lyric-tool fixtures
-  - Added `scripts/lyric_lint.py` (+ 25 tests): approximate rhyme scheme,
+  - Added `scripts/lyric_lint.py` (+ 31 tests): approximate rhyme scheme,
     near-rhyme, repetition, line-spread, and built-in cliché detection
   - Added `references/07-worked-examples.md`: two verified end-to-end BUILD
     deliverables (English acoustic ballad; Mandarin + English city-pop)

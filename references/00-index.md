@@ -78,6 +78,7 @@ matches the task; do not read them all at once.
 | `scripts/lyric_lint.py` | Approximate rhyme scheme, near-rhyme, repetition, line-spread, and cliché lint. |
 | `scripts/validate_structure.py` | Validate section tags and basic song shape. |
 | `scripts/check_freshness.py` | Report per-file staleness from `assets/freshness.json` (exit 0 fresh / 1 stale / 2 registry problem); `--check-sources` flags broken source URLs. |
+| `scripts/check_evals.py` | Structural validation of `evals/evals.json`: unique ids, required fields, referenced script/asset paths exist. |
 | `scripts/selftest.py` | One command that runs the whole bundle's self-checks (must exit 0). |
 | `scripts/source_check.py` | Source-URL validation helper imported by `check_freshness.py` (not run directly). |
 | `evals/evals.json` | Sample prompts to test trigger + output quality. |

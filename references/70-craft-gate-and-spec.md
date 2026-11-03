@@ -139,7 +139,7 @@ fusion), `mc-arrangement-arch`, `mc-vocal-direction`, `mc-render-compile`
 tooling + self-update. The companion libraries = the deep, book-sourced craft
 spec. When a request needs professional depth (a full LYR-SPEC/ARR-SPEC, a
 style breakdown, a tone-melody audit, arrangement architecture), hand off to
-`lw-*`/`mc-*` and use this bundle for the Suno compile/verify tail.
+`lw-*`/`mc-*` and use this bundle for the Suno compile/verify tail. If the companion libraries are absent on this host (`ls ~/.agents/skills/` shows no `lw-*`/`mc-*` and `~/.agents/skills-library/` is missing or empty), skip the handoff: run the gate, spec sheet, audit, and compile steps from §1–§4 of this file alone — the quick path stays complete without them.
 
 ## Sources
 

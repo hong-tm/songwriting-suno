@@ -93,7 +93,8 @@ Right-click any sound and choose **Mashup** (blend two songs) or **Use as Sample
 - **Inspire**: generate in the style of a playlist of your own songs. Short playlists (3-5 tracks) give the most control.
 - **Suno Sounds**: generate SFX, samples and loops as One Shot or Loop, with BPM and key.
 - **My Taste**: personalization for all users; thumbs up/down trains it.
-- **Custom Models**: Pro/Premier. Train up to 3 private model variants on at least 6 of your own tracks; takes 2-5 minutes.
+- **Custom Models**: Pro/Premier. Train up to 3 model variants on at least 6 of your own tracks; takes 2-5 minutes. Since Oct 15 2026 Premier users can **share custom models** with collaborators, with 2x the inputs [OFFICIAL, release notes 2026-10-15].
+- **Workspaces**: invite-only shared song library for a team; Pro and Premier only (Oct 15 2026) [OFFICIAL, release notes 2026-10-15].
 
 ### 2.10 Add Vocals / Add Instrumental
 
@@ -101,11 +102,11 @@ Upload or generate an instrumental, then `...`, **Add Vocals**, enter lyrics, an
 
 ### 2.11 Studio 2.0 (Premier)
 
-A browser DAW: MIDI, chat bar, audio effects, wavetable synth, automation; exports stems, MP3 and MIDI. **Studio workflows are exempt from download limits**, so heavy iteration belongs here.
+A browser DAW: MIDI, chat bar, audio effects, wavetable synth, automation; exports stems, MP3 and MIDI. Late-Oct 2026 releases add clip timestretching, shaped fade curves, semitone/cents pitch adjustment, a clip info panel, track show/hide and grid density controls [OFFICIAL, release notes 2026-10-08 and 2026-10-29]. **Studio workflows are exempt from download limits**, so heavy iteration belongs here.
 
 ### 2.12 Sliders and other controls
 
-**Creative Sliders**: Weirdness (Safe to Chaos), Style Influence (Loose to Strong), Audio Influence. **Duration slider** on web (changelog ties it to v5.5; unclear whether v6 honors it). **Vocal Gender** selector on web and mobile. Plus Hooks (short videos), Scenes (photo to song), Speech (beta), Albums.
+**Creative Sliders**: Weirdness (Safe to Chaos), Style Influence (Loose to Strong), Audio Influence. **Duration slider** on web (changelog ties it to v5.5; unclear whether v6 honors it). **Vocal Gender** selector on web and mobile. Plus Hooks (short videos), Scenes (photo to song), Speech (beta), Albums. **Suno MCP (beta, Oct 28 2026)** drives create, Cover, Extend, Mashup, Speech and audio upload from Claude, ChatGPT, Claude Code or another MCP client; it works on every plan and spends your credits [OFFICIAL, help.suno.com 14551361 and release notes 2026-10-28].
 
 ## 3. Plans, credits, and downloads
 
@@ -232,6 +233,7 @@ Suno exposes **no official seed**. The community workaround is to **Extend from 
 5. **Riffusion branding**: one source claims "Riffusion Is Now Google Flow Music"; others call it "Producer.ai / FUZZ-2.0". Unverified; Riffusion's current ownership was not confirmed.
 6. **Character limits**: measured by community, never documented by Suno, may change silently.
 7. **"Phone trick" and "seed trick"**: no established phone trick found; no official seed control exists. Community workarounds are not reproducible.
+8. **Custom models shared**: the Oct 15 2026 release notes let Premier share custom models; the Custom Models help article (v5.5, edited Sep 9 2026) still says models "cannot be shared amongst users". Treat the release note as current.
 
 ## How to apply this
 
@@ -265,6 +267,7 @@ Suno exposes **no official seed**. The community workaround is to **Extend from 
 - https://help.suno.com/en/articles/3484161 (Personas)
 - https://help.suno.com/en/articles/11362369 (Voices)
 - https://help.suno.com/en/articles/11362433 (Voices FAQ)
+- https://help.suno.com/en/articles/14551361 (Suno MCP beta)
 - https://help.suno.com/en/articles/12702337 (Advanced Stem Separation)
 - https://help.suno.com/en/articles/9819905 (Stem Cover)
 - https://help.suno.com/en/articles/6141505 (Song Editor)
