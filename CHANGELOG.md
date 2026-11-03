@@ -8,6 +8,13 @@ See `references/50-self-update.md` for the full update protocol.
 
 ---
 
+## 2026-11-02 — packaging gate + source_check coverage (ulw pass 2)
+
+- **Touched:** `install.sh`, `scripts/selftest.py`, `scripts/tests/test_source_check.py` (new), this changelog
+- **Facts changed:** no Suno facts changed — packaging: `install.sh` now also excludes `.github/`, `.gitignore`, `AGENTS.md`, `scripts/AGENTS.md` and `*.pyc` from the installed copy (repo-dev artifacts only; payload unchanged); `selftest.py` gained check group 9 `install:smoke`, which really runs `install.sh` into a throwaway directory and asserts payload present + artifacts absent (SKIP without bash; proven to FAIL against the pre-change installer); `source_check.py` (URL lint imported by `check_freshness.py`) now has direct stdlib unittest coverage (16 cases, mutation-proven) — tests are 123 total, selftest 17 checks.
+- **Sources:** none — no external facts consulted
+- **Freshness:** none — no fact-bearing reference changed
+
 ## 2026-11-01 — review fixes for PR #1 (registry sources, tier table, install guard)
 
 - **Touched:** `assets/freshness.json`, `references/20-tools-and-projects.md`, `references/50-self-update.md`, `install.sh`, `scripts/tests/test_check_evals.py`

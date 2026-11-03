@@ -28,7 +28,11 @@ rm -rf "$DEST"
 mkdir -p "$DEST"
 
 # Copy the bundle, skipping repo-dev artifacts.
-tar -C "$SRC" -cf - --exclude=./.git --exclude=./.omo --exclude=__pycache__ . \
+tar -C "$SRC" -cf - \
+  --exclude=./.git --exclude=./.omo --exclude=./.github \
+  --exclude=./.gitignore --exclude=./AGENTS.md --exclude=./scripts/AGENTS.md \
+  --exclude=__pycache__ --exclude='*.pyc' \
+  . \
   | tar -C "$DEST" -xf -
 
 # drop caches that may have been copied

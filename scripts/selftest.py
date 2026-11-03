@@ -6,9 +6,9 @@ self-update: script help responses, unit tests, freshness coverage, the
 lyric tools on built-in fixtures, and JSON sanity of the asset files.
 
 All paths are resolved from this script's own location (skill root =
-parent of scripts/), so it runs from any working directory. Runs no
-network, writes no files, and only ever reports — check failures are
-evidence, never auto-fixed.
+parent of scripts/), so it runs from any working directory. Runs no network;
+its only writes are a throwaway install destination that the install check
+deletes again — check failures are evidence, never auto-fixed.
 
 Checks (in order):
   1. help        every scripts/*.py except selftest.py and anything under
@@ -29,6 +29,9 @@ Checks (in order):
                  assets/persona-presets.json each parse with json.load
   8. evals       check_evals.py exits 0 on the repo's evals/evals.json
                  (structural contract: ids, fields, path references)
+  9. install     install.sh installs the bundle into a throwaway directory
+                 with the payload present and repo-dev artifacts (.git,
+                 .github, .gitignore, AGENTS.md) absent; SKIP without bash
 
 Exit codes:
     0  no FAIL verdicts (SKIP allowed)
@@ -42,8 +45,10 @@ from __future__ import annotations
 
 import argparse
 import json
+import shutil
 import subprocess
 import sys
+import tempfile
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable
@@ -63,6 +68,21 @@ JSON_PATHS = (
     "evals/evals.json",
     "assets/freshness.json",
     "assets/persona-presets.json",
+)
+INSTALL_PAYLOAD = (
+    "SKILL.md",
+    "scripts/selftest.py",
+    "references/00-index.md",
+    "assets/freshness.json",
+    "evals/evals.json",
+)
+INSTALL_ARTIFACTS = (
+    ".git",
+    ".github",
+    ".gitignore",
+    "AGENTS.md",
+    "scripts/AGENTS.md",
+    "scripts/__pycache__",
 )
 
 
@@ -177,6 +197,33 @@ def check_json_file(rel_path: str) -> CheckResult:
     return CheckResult(f"json:{rel_path}", PASS, "parsed")
 
 
+def check_install_smoke() -> CheckResult:
+    """Check 9: install.sh lands the payload without repo-dev artifacts."""
+    installer = SKILL_ROOT / "install.sh"
+    bash = shutil.which("bash")
+    if bash is None or not installer.is_file():
+        return CheckResult("install:smoke", SKIP, "bash or install.sh not present")
+    with tempfile.TemporaryDirectory(prefix="swsuno-install-smoke-") as tmp:
+        dest = Path(tmp) / "skills" / "songwriting-suno"
+        try:
+            proc = subprocess.run(
+                [bash, str(installer), str(Path(tmp) / "skills")],
+                capture_output=True,
+                text=True,
+                timeout=120,
+            )
+        except subprocess.TimeoutExpired as exc:
+            return CheckResult("install:smoke", FAIL, f"installer timed out: {exc}")
+        problems: list[str] = []
+        if proc.returncode != 0:
+            problems.append(f"installer exit={proc.returncode}")
+        problems.extend(f"missing {r}" for r in INSTALL_PAYLOAD if not (dest / r).is_file())
+        problems.extend(f"leaked {r}" for r in INSTALL_ARTIFACTS if (dest / r).exists())
+        verdict = FAIL if problems else PASS
+        detail = "; ".join(problems) if problems else "payload present, artifacts excluded"
+        return CheckResult("install:smoke", verdict, detail)
+
+
 def run_checks() -> list[CheckResult]:
     checks: list[CheckResult] = []
     checks.extend(script_help_checks())
@@ -209,6 +256,7 @@ def run_checks() -> list[CheckResult]:
 
     checks.append(check_lyric_lint_fixture())
     checks.extend(check_json_file(rel) for rel in JSON_PATHS)
+    checks.append(check_install_smoke())
     return checks
 
 
@@ -274,7 +322,7 @@ def main(argv: list[str] | None = None) -> int:
     return exit_code
 
 
-def vars_check(check: CheckResult) -> dict:
+def vars_check(check: CheckResult) -> dict[str, str]:
     return {
         "name": check.name,
         "verdict": check.verdict,
